@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../../rate_projeto/css/atores.css"; 
+import "../../../../rate_projeto/css/atores.css";
 import Header from "../components/Header";
 import LateralBar from "../components/LateralBar";
 
@@ -21,30 +21,25 @@ const Atores = () => {
         <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
       </head>
 
-      <body>
-        <Header/>
-
-        <main>
-          <section className="blocos_atores">
-            <div className="info_ator">
-              <div className="atores">
-                <h1>Atores:</h1>
-              </div>
-              <div className="card_blocos">
-                {Array.from({ length: 30 }).map((_, index) => (
-                  <a href="class_ator.html" key={index}>
-                    <div className="blocos">
-                        
-                    </div>
-                  </a>
-                ))}
-              </div>
+      <main>
+        <Header />
+        <section className="blocos_atores">
+          <div className="info_ator">
+            <div className="atores">
+              <h1>Atores:</h1>
             </div>
-          </section>
+            <div className="card_blocos">
+              {Array.from({ length: 30 }).map((_, index) => (
+                <a href="class_ator.html" key={index}>
+                  <div className="blocos"></div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
 
-          <LateralBar/>
-        </main>
-      </body>
+        <LateralBar />
+      </main>
     </div>
   );
 };
