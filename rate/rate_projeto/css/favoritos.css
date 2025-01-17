@@ -50,6 +50,8 @@ body {
     align-items: center;
     width: 32px;
     height: 32px;
+    margin-top: 100%;
+    margin-bottom: -62%;
 }
 
 .ultimo_botao {
@@ -93,7 +95,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     margin-left: 12%;
-}        
+}                 
 
 .cinzacl{
     background-color: #737373;
@@ -221,7 +223,7 @@ body {
 
 #btn_remover {
     background-color: #B60B0D;
-    width: 80px;
+    width: 95px;
     padding: 10px;
     border-radius: 7px ;
     color: rgb(253, 253, 253);

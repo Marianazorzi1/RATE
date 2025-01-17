@@ -1,6 +1,8 @@
 // components/Header.jsx
 import React from 'react';
 import Image from 'next/image'; 
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Header = () => {
   return (

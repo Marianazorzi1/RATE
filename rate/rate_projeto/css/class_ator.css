@@ -48,6 +48,8 @@ body {
     align-items: center;
     width: 32px;
     height: 32px;
+    margin-top: 100%;
+    margin-bottom: -62%;
 }
 
 .ultimo_botao {
