@@ -5,6 +5,10 @@ import Generos from "./paginas/Generos.jsx";
 import Favoritos from "./paginas/Favoritos.jsx";
 import Atores from "./paginas/Atores.jsx";
 import PaginaInicialLogin from "./paginas/PaginaInicialLogin.jsx";
+import SugsFilm from "./paginas/SugsFilm.jsx";
+import ModsSugsFilm from "./paginas/ModSugsFilm.jsx";
+import ModsSugsAtor from "./paginas/ModSugsAtor.jsx";
+import EditarPerfil from "./paginas/EditarPerfil.jsx";
 
 
 export default function Home() {
@@ -17,8 +21,12 @@ export default function Home() {
         {/* <Generos/> */}
         {/* <GenerosADM/> */}
         {/* <Favoritos/> */}
-        <Atores/>
+        {/* <Atores/> */}
         {/* <PaginaInicialLogin/> */}
+        {/* <SugsFilm/> */}
+        {/* <ModsSugsFilm/> */}
+        {/* <ModsSugsAtor/> */}
+        <EditarPerfil/>
 
         
       </main>
