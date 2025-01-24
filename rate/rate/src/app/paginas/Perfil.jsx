@@ -1,4 +1,4 @@
-'use client'; 
+'use client';
 
 import React, { useState } from "react";
 import "../../../../rate_projeto/css/perfil.css";
@@ -9,6 +9,7 @@ const Perfil = () => {
   const [bio, setBio] = useState('');
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
+  const [showCard, setShowCard] = useState(false); 
 
   const handleDeleteAccount = () => {
     setShowDeleteConfirm(true);
@@ -37,6 +38,13 @@ const Perfil = () => {
     setShowExitConfirm(false);
   };
 
+  const perfuncao = () => {
+    setShowCard(true); 
+    setTimeout(() => {
+      setShowCard(false); 
+    }, 5000);
+  };
+
   const handleSave = (event) => {
     event.preventDefault();
 
@@ -60,25 +68,22 @@ const Perfil = () => {
     if (!isValid) {
       alert(errorMessage);
     } else {
-      alert('Perfil salvo com sucesso!');
+      perfuncao(); 
     }
   };
 
   return (
     <>
-      
       <div className="top-icons">
         <button onClick={handleDeleteAccount} className="top-icon">
-          <img src="img/🦆 icon _Trash_.png" alt="Trash Icon" className="volta"/>
+          <img src="img/🦆 icon _Trash_.png" alt="Trash Icon" className="volta" />
         </button>
         <button onClick={handleExitAccount} className="top-icon">
-          <img src="img/🦆 icon _door leave_.png" alt="Exit Icon" className="lixo"/>
+          <img src="img/🦆 icon _door leave_.png" alt="Exit Icon" className="lixo" />
         </button>
       </div>
 
-     
       <div className="container">
-        
         <div className="content">
           <div className="left-container">
             <div className="profile-picture">
@@ -136,6 +141,12 @@ const Perfil = () => {
           </div>
         </div>
       </div>
+
+      {showCard && (
+        <div className="card-cinza">
+          <p className="texto">Suas mudanças foram <br/> salvas com sucesso</p>
+        </div>
+      )}
 
       {showDeleteConfirm && (
         <div className="confirm-box">

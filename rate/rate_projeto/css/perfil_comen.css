@@ -59,12 +59,21 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;           
+    right: 65px;
 }
 
 .top-icon {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
     cursor: pointer;
+    padding: 50px;
 }
 
 .content {

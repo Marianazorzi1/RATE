@@ -5,6 +5,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+.cont-button {
+    padding: 10px 30px !important;
+    border: none !important;
+    border-radius: 20px !important;
+    cursor: pointer !important;
+    align-self: flex-end !important;
+    margin-top: 20% !important;
+    margin-left: 80% !important;
+}
+.outer-button{
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 20px !important;
+    cursor: pointer !important;
+    align-self: flex-end !important;
+    margin-top: -10px !important;
+    background-color: #737373;
+    margin-right: 80px !important;
+    
+    
+}
 
 body {
     font-family: 'Montserrat', sans-serif;

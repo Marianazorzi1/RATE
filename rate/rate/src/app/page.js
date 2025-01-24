@@ -8,7 +8,13 @@ import PaginaInicialLogin from "./paginas/PaginaInicialLogin.jsx";
 import SugsFilm from "./paginas/SugsFilm.jsx";
 import ModsSugsFilm from "./paginas/ModSugsFilm.jsx";
 import ModsSugsAtor from "./paginas/ModSugsAtor.jsx";
-import EditarPerfil from "./paginas/EditarPerfil.jsx";
+import Perfil from "./paginas/Perfil.jsx";
+import PerfilComen from "./paginas/PerfilComen.jsx";
+import PerfilAmg from "./paginas/PerfilAmg.jsx";
+
+
+
+
 
 
 export default function Home() {
@@ -26,7 +32,9 @@ export default function Home() {
         {/* <SugsFilm/> */}
         {/* <ModsSugsFilm/> */}
         {/* <ModsSugsAtor/> */}
-        <EditarPerfil/>
+        <Perfil/>
+        {/* <PerfilComen /> */}
+        {/* <PerfilAmg /> */}
 
         
       </main>
