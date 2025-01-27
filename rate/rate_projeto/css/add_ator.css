@@ -47,18 +47,24 @@ body {
 }
 
 .container {
-    background-color: #3f3e3e;
+    margin-top: 20%;  /* Aplique o margin-top de 20% */
+    background-color: #3f3e3e;  /* Definindo o fundo */
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: max-content;  /* Ajusta a altura conforme o conteúdo */
     padding: 20px;
     border-radius: 15px;
-    height: max-content;
     margin-bottom: 40px;
-    width: 20%;
-    margin-left: 40%;
-    margin-right: 40%;
+    width: 90%; 
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
+div.container[class="container"] {
+    margin-top: 10% !important;
+}
+
 
 h2 {
     margin-bottom: 20px;

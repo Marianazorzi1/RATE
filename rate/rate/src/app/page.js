@@ -32,9 +32,9 @@ export default function Home() {
         {/* <SugsFilm/> */}
         {/* <ModsSugsFilm/> */}
         {/* <ModsSugsAtor/> */}
-        <Perfil/>
+        {/* <Perfil/> */}
         {/* <PerfilComen /> */}
-        {/* <PerfilAmg /> */}
+        <PerfilAmg />
 
         
       </main>

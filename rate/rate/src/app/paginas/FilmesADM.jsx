@@ -21,7 +21,7 @@ const FilmesADM = () => {
               <h1>Filmes:</h1>
             </div>
             <div className="card_blocos">
-              {Array(36)
+              {Array(21)
                 .fill(null)
                 .map((_, index) => (
                   <a key={index} href="class_filmes_ADM.html">

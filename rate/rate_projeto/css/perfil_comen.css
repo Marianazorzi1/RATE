@@ -17,7 +17,8 @@ body {
     height: 100vh;
 }
 
-.container {
+
+.containe {
     display: flex;
     flex-direction: column;
     background-color: #52057B;
@@ -59,14 +60,13 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-
     border: none;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
     position: absolute;
     top: 20px;           
-    right: 65px;
+    right: 65px ;
 }
 
 .top-icon {
@@ -74,6 +74,7 @@ body {
     height: 34px;
     cursor: pointer;
     padding: 50px;
+    right: 65px ;
 }
 
 .content {

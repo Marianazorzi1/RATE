@@ -83,7 +83,7 @@ const Perfil = () => {
         </button>
       </div>
 
-      <div className="container">
+      <div className="containe">
         <div className="content">
           <div className="left-container">
             <div className="profile-picture">

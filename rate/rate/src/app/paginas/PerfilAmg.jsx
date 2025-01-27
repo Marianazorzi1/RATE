@@ -66,11 +66,11 @@ const PerfilAmg = () => {
         />
       </div>
 
-      <div className="container">
+      <div className="containe">
         <div className="content">
           <div className="left-container">
             <div className="profile-picture">
-              <img src="img/Group 44.png" alt="User Icon" id="edicao" />
+              <img src="img/Group-44.png" alt="User Icon" id="edicao" />
             </div>
           </div>
 
