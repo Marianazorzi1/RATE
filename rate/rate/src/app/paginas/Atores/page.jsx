@@ -1,7 +1,7 @@
 import React from "react";
-import "../../../../rate_projeto/css/atores.css";
-import Header from "../components/Header";
-import LateralBar from "../components/LateralBar";
+import "../../paginas/Atores/atores.css";
+import Header from "../../components/Header";
+import LateralBar from "../../components/LateralBar";
 
 const Atores = () => {
   return (
@@ -29,7 +29,7 @@ const Atores = () => {
               <h1>Atores:</h1>
             </div>
             <div className="card_blocos">
-              {Array.from({ length: 30 }).map((_, index) => (
+              {Array.from({ length: 21 }).map((_, index) => (
                 <a href="class_ator.html" key={index}>
                   <div className="blocos"></div>
                 </a>

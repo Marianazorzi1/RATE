@@ -1,7 +1,7 @@
 import React from "react";
-import "../../../../rate_projeto/css/atores_ADM.css"; 
-import Header from "../components/Header";
-import LateralBar from "../components/LateralBar";
+import "../../paginas/AtoresADM/atores_ADM.css"; 
+import Header from "../../components/Header";
+import LateralBar from "../../components/LateralBar";
 
 const AtoresADM = () => {
   return (
@@ -20,7 +20,7 @@ const AtoresADM = () => {
               <h1>Atores: </h1>
             </div>
             <div className="card_blocos">
-              {Array(30)
+              {Array(21)
                 .fill(null)
                 .map((_, index) => (
                   <a key={index} href="class_ator_ADM.html">

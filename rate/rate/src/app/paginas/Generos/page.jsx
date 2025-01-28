@@ -1,7 +1,7 @@
 import React from "react";
-import "../../../../rate_projeto/css/generos.css"; 
-import LateralBar from "../components/LateralBar";
-import Header from "../components/Header";
+import "../../paginas/Generos/generos.css"; 
+import LateralBar from "../../components/LateralBar";
+import Header from "../../components/Header";
 
 const Generos = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../../../rate_projeto/css/mod_sugs_filme.css'; 
-import FormField from '../components/FormField';
-import Classificacao from '../components/ClassificacaoIMG';
+import '../../paginas/ModSugsFilm/mod_sugs_filme.css'; 
+import FormField from '../../components/FormField';
+import Classificacao from '../../components/ClassificacaoIMG';
 
 const ModifySuggestion = () => {
 

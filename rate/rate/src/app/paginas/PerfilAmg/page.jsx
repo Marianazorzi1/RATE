@@ -1,15 +1,13 @@
 'use client';
 
 import React, { useState } from "react";
-import "../../../../rate_projeto/css/perfil.css";
+import "../../paginas/PerfilAmg/perfil_amg.css";
 
-const Perfil = () => {
+const PerfilAmg = () => {
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
   const [bio, setBio] = useState('');
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
-  const [showCard, setShowCard] = useState(false); 
 
   const handleDeleteAccount = () => {
     setShowDeleteConfirm(true);
@@ -21,7 +19,6 @@ const Perfil = () => {
 
   const handleConfirmDelete = () => {
     setName('');
-    setEmail('');
     setBio('');
     setShowDeleteConfirm(false);
   };
@@ -38,13 +35,6 @@ const Perfil = () => {
     setShowExitConfirm(false);
   };
 
-  const perfuncao = () => {
-    setShowCard(true); 
-    setTimeout(() => {
-      setShowCard(false); 
-    }, 5000);
-  };
-
   const handleSave = (event) => {
     event.preventDefault();
 
@@ -56,38 +46,31 @@ const Perfil = () => {
       errorMessage += 'O nome é obrigatório.\n';
     }
 
-    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    if (!email.trim()) {
-      isValid = false;
-      errorMessage += 'O email é obrigatório.\n';
-    } else if (!emailRegex.test(email.trim())) {
-      isValid = false;
-      errorMessage += 'O email não tem um formato válido.\n';
-    }
-
     if (!isValid) {
       alert(errorMessage);
     } else {
-      perfuncao(); 
+      alert('Perfil salvo com sucesso!');
     }
   };
 
   return (
-    <>
+    <div className="Body">
       <div className="top-icons">
-        <button onClick={handleDeleteAccount} className="top-icon">
-          <img src="img/🦆 icon _Trash_.png" alt="Trash Icon" className="volta" />
-        </button>
-        <button onClick={handleExitAccount} className="top-icon">
-          <img src="img/🦆 icon _door leave_.png" alt="Exit Icon" className="lixo" />
-        </button>
+        <p>Remover</p>
+        <img
+          src="img/🦆 icon _person remove_.png"
+          alt="Adicionar amigo"
+          className="top-icon"
+          id="addamigo"
+          role="button"
+        />
       </div>
 
       <div className="containe">
         <div className="content">
           <div className="left-container">
             <div className="profile-picture">
-              <img src="img/Group 44.png" alt="User Icon" id="edicao" />
+              <img src="img/Group-44.png" alt="User Icon" id="edicao" />
             </div>
           </div>
 
@@ -95,7 +78,9 @@ const Perfil = () => {
             <form id="profile-form" onSubmit={handleSave}>
               <div className="info-container">
                 <div className="info">
-                  <label htmlFor="name" className="info-text">Nome (apelido):</label>
+                  <label htmlFor="name" className="info-text">
+                    Nome (apelido):
+                  </label>
                   <div className="input-wrapper">
                     <input
                       type="text"
@@ -110,20 +95,9 @@ const Perfil = () => {
                 </div>
 
                 <div className="info">
-                  <label htmlFor="email" className="info-text">Email:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="input-text"
-                    placeholder="exemplo@email.com"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                </div>
-
-                <div className="info">
-                  <label htmlFor="bio" className="info-text">Bio:</label>
+                  <label htmlFor="bio" className="info-text">
+                    Bio:
+                  </label>
                   <input
                     type="text"
                     id="bio"
@@ -136,24 +110,33 @@ const Perfil = () => {
                 </div>
               </div>
 
-              <button type="submit" className="cont-button">Salvar</button>
+              <div className="buttons-container">
+            
+                <a href="ver-comentarios.html">
+                  <button type="button" className="outer-button">
+                    Ver comentários
+                  </button>
+                </a>
+              </div>
+
+              <button type="submit" className="cont-button">
+                Voltar
+              </button>
             </form>
           </div>
         </div>
       </div>
 
-      {showCard && (
-        <div className="card-cinza">
-          <p className="texto">Suas mudanças foram <br/> salvas com sucesso</p>
-        </div>
-      )}
-
       {showDeleteConfirm && (
         <div className="confirm-box">
           <p>Tem certeza que deseja excluir sua conta?</p>
           <div className="buttons-container">
-            <button onClick={handleConfirmDelete} className="confirm-button">Sim</button>
-            <button onClick={handleCancelDelete} className="cancel-button">Não</button>
+            <button onClick={handleConfirmDelete} className="confirm-button">
+              Sim
+            </button>
+            <button onClick={handleCancelDelete} className="cancel-button">
+              Não
+            </button>
           </div>
         </div>
       )}
@@ -162,13 +145,17 @@ const Perfil = () => {
         <div className="confirm-box">
           <p>Tem certeza que deseja sair da sua conta?</p>
           <div className="buttons-container">
-            <button onClick={handleConfirmExit} className="confirm-button">Sim</button>
-            <button onClick={handleCancelExit} className="cancel-button">Não</button>
+            <button onClick={handleConfirmExit} className="confirm-button">
+              Sim
+            </button>
+            <button onClick={handleCancelExit} className="cancel-button">
+              Não
+            </button>
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
-export default Perfil;
+export default PerfilAmg;

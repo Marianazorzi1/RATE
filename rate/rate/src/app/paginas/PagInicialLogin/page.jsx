@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../../../rate_projeto/css/inicial_login.css';
-import Header from '../components/Header';
-import LateralBar from '../components/LateralBar';
+import '../../paginas/PagInicialLogin/inicial_login.css';
+import Header from '../../components/Header';
+import LateralBar from '../../components/LateralBar';
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
               <h1>Filmes: </h1>
             </div>
             <div className="card_blocos">
-              {[...Array(12)].map((_, index) => (
+              {[...Array(14)].map((_, index) => (
                 <div className="blocos" key={index}></div>
               ))}
             </div>
@@ -28,7 +28,7 @@ const App = () => {
               <h1>Atores: </h1>
             </div>
             <div className="card_blocos">
-              {[...Array(12)].map((_, index) => (
+              {[...Array(14)].map((_, index) => (
                 <div className="blocos" key={index}></div>
               ))}
             </div>

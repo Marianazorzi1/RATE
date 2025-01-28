@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../../../rate_projeto/css/add_ator.css'; 
-import FormMenor from '../components/FormMenor';
+import '../../paginas/ModSugsAtor/add_ator.css'; 
+import FormMenor from '../../components/FormMenor';
 
 const ModifyActorSuggestion = () => {
 

@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #2C2C2C;
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+} */
 body {
     font-family: Arial, sans-serif;
     background-color: #2C2C2C;
@@ -47,12 +55,12 @@ body {
 }
 
 .container {
-    margin-top: 20%;  /* Aplique o margin-top de 20% */
-    background-color: #3f3e3e;  /* Definindo o fundo */
+    margin-top: 20%;  
+    background-color: #3f3e3e; 
     display: flex;
     justify-content: center; 
     align-items: center;     
-    height: max-content;  /* Ajusta a altura conforme o conteúdo */
+    height: max-content; 
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 40px;
@@ -62,7 +70,7 @@ body {
     font-weight: bold;
 }
 div.container[class="container"] {
-    margin-top: 10% !important;
+    margin-top: 20% ;
 }
 
 

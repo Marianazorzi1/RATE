@@ -1,7 +1,7 @@
 import React from "react";
-import "../../../../rate_projeto/css/filmes_ADM.css"; 
-import Header from "../components/Header.jsx";
-import LateralBar from "../components/LateralBar";
+import "../../paginas/FilmesADM/filmes_ADM.css"; 
+import Header from "../../components/Header.jsx";
+import LateralBar from "../../components/LateralBar";
 
 const FilmesADM = () => {
   return (

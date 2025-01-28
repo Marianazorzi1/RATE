@@ -1,7 +1,7 @@
 import React from "react";
-import "../../../../rate_projeto/css/favoritos.css";
-import Header from "../components/Header";
-import LateralBar from "../components/LateralBar";
+import "../../paginas/Favoritos/favoritos.css";
+import Header from "../../components/Header";
+import LateralBar from "../../components/LateralBar";
 
 const Favoritos = () => {
   return (
@@ -18,7 +18,7 @@ const Favoritos = () => {
               <h1>Favoritos:</h1>
             </div>
             <div className="card_blocos">
-              {Array(18)
+              {Array(21)
                 .fill(null)
                 .map((_, index) => (
                   <a key={index} href={index % 2 === 0 ? "class_ator.html" : "class_filmes.html"}>

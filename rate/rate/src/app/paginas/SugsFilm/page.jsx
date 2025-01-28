@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../../../rate_projeto/css/sugs_filme.css';
-import FormField from '../components/FormField';
-import Classificacao from '../components/ClassificacaoIMG';
+import '../../paginas/SugsFilm/sugs_filme.css';
+import FormField from '../../components/FormField';
+import Classificacao from '../../components/ClassificacaoIMG';
 
 function App() {
     // const goBack = () => {

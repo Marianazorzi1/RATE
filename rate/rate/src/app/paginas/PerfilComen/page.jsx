@@ -1,7 +1,7 @@
 'use client'; 
 
 import React, { useState } from "react";
-import "../../../../rate_projeto/css/perfil_comen.css";
+import "../../paginas/PerfilComen/perfil_comen.css";
 
 const PerfilComen = () => {
   const [name, setName] = useState('');
@@ -64,7 +64,7 @@ const PerfilComen = () => {
         <div className="content">
           <div className="left-container">
             <div className="profile-picture">
-              <img src="img/Group 44.png" alt="User Icon" id="edicao" />
+              <img src="img/Group-44.png" alt="User Icon" id="edicao" />
             </div>
           </div>
 

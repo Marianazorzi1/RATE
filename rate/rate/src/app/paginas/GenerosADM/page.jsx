@@ -1,7 +1,7 @@
 import React from "react";
-import "../../../../rate_projeto/css/generos_ADM.css";
-import Header from "../components/Header";
-import LateralBar from "../components/LateralBar";
+import "../../paginas/GenerosADM/generos_ADM.css";
+import Header from "../../components/Header";
+import LateralBar from "../../components/LateralBar";
 
 
 
@@ -22,7 +22,7 @@ const GenerosADM = () => {
               <h1>Gêneros:</h1>
             </div>
             <div className="card_blocos">
-              {[...Array(50)].map((_, index) => (
+              {[...Array(21)].map((_, index) => (
                 <div className="blocos" key={index}></div>
               ))}
             </div>
