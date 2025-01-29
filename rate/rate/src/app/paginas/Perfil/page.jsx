@@ -73,7 +73,21 @@ const Perfil = () => {
   };
 
   return (
-    <>
+    <><style>
+    {`
+      body {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        background-color: #52057B; 
+        color: #D9D9D9; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+    `}
+  </style>
       <div className="top-icons">
         <button onClick={handleDeleteAccount} className="top-icon">
           <img src="img/🦆 icon _Trash_.png" alt="Trash Icon" className="volta" />
@@ -110,7 +124,7 @@ const Perfil = () => {
                 </div>
 
                 <div className="info">
-                  <label htmlFor="email" className="info-text">Email:</label>
+                  <label htmlFor="email" className="Bio">Email:</label>
                   <input
                     type="email"
                     id="email"
@@ -123,7 +137,7 @@ const Perfil = () => {
                 </div>
 
                 <div className="info">
-                  <label htmlFor="bio" className="info-text">Bio:</label>
+                  <label htmlFor="bio" className="Bio">Bio:</label>
                   <input
                     type="text"
                     id="bio"

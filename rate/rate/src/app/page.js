@@ -22,7 +22,7 @@ export default function Home() {
     <div>
       <main>
         
-        <FilmesADM />
+        {/* <FilmesADM /> */}
         {/* <AtoresADM /> */}
         {/* <Generos/> */}
         {/* <GenerosADM/> */}
@@ -33,7 +33,7 @@ export default function Home() {
         {/* <ModsSugsFilm/> */}
         {/* <ModsSugsAtor/> */}
         {/* <Perfil/> */}
-        {/* <PerfilComen /> */}
+        <PerfilComen />
         {/* <PerfilAmg /> */}
 
         

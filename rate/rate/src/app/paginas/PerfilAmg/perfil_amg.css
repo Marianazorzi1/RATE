@@ -21,10 +21,9 @@
     border-radius: 20px;
     cursor: pointer;
     align-self: flex-end;
-    margin-top: -10px;
+    margin-top: 10px;
     background-color: #737373;
-    margin-right: 40px;
-    margin-left: 50px;
+    margin-left: 18%;
 }
 
 
@@ -48,6 +47,7 @@ body {
     width: 800px;
     box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
     position: relative;
+    
 }
 
 
@@ -113,6 +113,7 @@ body {
     border-radius: 50%;
     width: 270px;
     height: 270px;
+    margin-right: 20%;
 }
 
 .right-container {
@@ -140,6 +141,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     margin-bottom: 5px;
+    margin-left: 20%;
 }
 
 .input-text {
@@ -186,6 +188,12 @@ body {
 .comment-button {
     background-color: #737373;
     align-self: flex-start;
+}
+.apelido{
+    margin-right: 50px; 
+}
+.Bio{
+    margin-left: 20%;
 }
 
 .comment-button:hover {

@@ -37,24 +37,29 @@ const PerfilComen = () => {
 
   const handleSave = (event) => {
     event.preventDefault();
+  }
+  
 
-    let isValid = true;
-    let errorMessage = '';
 
-    if (!name.trim()) {
-      isValid = false;
-      errorMessage += 'O nome é obrigatório.\n';
-    }
-
-    if (!isValid) {
-      alert(errorMessage);
-    } else {
-      alert('Perfil salvo com sucesso!');
-    }
-  };
+    
 
   return (
     <>
+    <style>
+        {`
+          body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            background-color: #52057B; 
+            color: #D9D9D9; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+
+        `}
+      </style>
       <div className="top-icons">
             <p>Amigo</p>
             <img src="img/🦆 icon _person add_.png" alt="Adicionar amigo" className="top-icon" id="addamigo" role="button"/>

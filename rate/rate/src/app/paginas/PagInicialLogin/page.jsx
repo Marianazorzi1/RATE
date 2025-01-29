@@ -20,7 +20,7 @@ const App = () => {
               <h1>Filmes: </h1>
             </div>
             <div className="card_blocos">
-              {[...Array(14)].map((_, index) => (
+              {[...Array(7)].map((_, index) => (
                 <div className="blocos" key={index}></div>
               ))}
             </div>

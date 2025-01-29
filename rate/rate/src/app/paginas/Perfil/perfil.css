@@ -46,7 +46,7 @@ body .containe {
     background-color: #52057B;
     border-radius: 15px;
     padding: 90px;
-    width: 100%;
+    width: 800px;
     max-width: 800px;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -124,6 +124,7 @@ body .containe {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     margin-bottom: 5px;
+    margin-left: 20%;
 }
 
 .info {
