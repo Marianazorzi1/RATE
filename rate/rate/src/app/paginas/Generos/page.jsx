@@ -1,12 +1,12 @@
 import React from "react";
-import "../../paginas/Generos/generos.css"; 
+import "../../paginas/Generos/generos.css";
 import LateralBar from "../../components/LateralBar";
 import Header from "../../components/Header";
 
 const Generos = () => {
   return (
     <>
-      <Header/>
+      <Header />
 
       <main>
         <section className="blocos_gen">
@@ -15,16 +15,19 @@ const Generos = () => {
               <h1>Gêneros: </h1>
             </div>
             <div className="card_blocos">
-              {Array(50)
+              {Array(21)
                 .fill(null)
                 .map((_, index) => (
-                  <div key={index} className="blocos"></div>
+                  <a key={index} href={`genero_${index}.html`}>
+                    <div className="blocos"></div>
+                  </a>
                 ))}
+
             </div>
           </div>
         </section>
 
-        <LateralBar/>
+        <LateralBar />
       </main>
     </>
   );

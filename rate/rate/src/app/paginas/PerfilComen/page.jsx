@@ -61,8 +61,8 @@ const PerfilComen = () => {
         `}
       </style>
       <div className="top-icons">
-            <p>Amigo</p>
-            <img src="img/🦆 icon _person add_.png" alt="Adicionar amigo" className="top-icon" id="addamigo" role="button"/>
+            <p className="rev">Amigo</p>
+            <img src="img/🦆 icon _person add_.png" alt="Adicionar amigo" className="desamigo" id="addamigo" role="button"/>
         </div>
 
       <div className="containe">

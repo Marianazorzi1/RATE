@@ -6,7 +6,7 @@ import LateralBar from '../../components/LateralBar';
 const App = () => {
   return (
     <div>
-      <Header/>
+      <Header />
 
       <main>
         <section className="blocos_filmes">
@@ -21,21 +21,27 @@ const App = () => {
             </div>
             <div className="card_blocos">
               {[...Array(7)].map((_, index) => (
-                <div className="blocos" key={index}></div>
+                <a key={index} href={`genero_${index}.html`}>
+                  <div className="blocos"></div>
+                </a>
               ))}
+
             </div>
             <div className="tit_ator">
               <h1>Atores: </h1>
             </div>
             <div className="card_blocos">
               {[...Array(14)].map((_, index) => (
-                <div className="blocos" key={index}></div>
+                <a key={index} href={`genero_${index}.html`}>
+                  <div className="blocos"></div>
+                </a>
               ))}
+
             </div>
           </div>
         </section>
 
-        <LateralBar/>
+        <LateralBar />
       </main>
     </div>
   );

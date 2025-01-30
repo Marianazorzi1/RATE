@@ -48,8 +48,8 @@ const PerfilAmg = () => {
         `}
       </style>
       <div className="top-icons">
-            <p>Remover</p>
-            <img src="/img/🦆 icon _person remove_.png" alt="Ícone de remover amigo" className="top-icon" id="removamigo" role="button"/>
+            <p className="rev">Remover</p>
+            <img src="/img/🦆 icon _person remove_.png" alt="Ícone de remover amigo" className="desamigo" id="removamigo" role="button"/>
 
       </div>
 

@@ -8,7 +8,7 @@ import LateralBar from "../../components/LateralBar";
 const GenerosADM = () => {
   return (
     <div>
-      <Header/>
+      <Header />
 
       <main>
         <section className="blocos_gen">
@@ -23,13 +23,16 @@ const GenerosADM = () => {
             </div>
             <div className="card_blocos">
               {[...Array(21)].map((_, index) => (
-                <div className="blocos" key={index}></div>
+                <a key={index} href={`genero_${index}.html`}>
+                  <div className="blocos"></div>
+                </a>
               ))}
+
             </div>
           </div>
         </section>
 
-        <LateralBar/>
+        <LateralBar />
       </main>
     </div>
   );

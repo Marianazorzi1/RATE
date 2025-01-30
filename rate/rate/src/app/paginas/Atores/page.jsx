@@ -6,7 +6,7 @@ import LateralBar from "../../components/LateralBar";
 const Atores = () => {
   return (
     <div lang="pt-BR">
-      <head>
+      {/* <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>RATE - Atores</title>
@@ -19,7 +19,7 @@ const Atores = () => {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         />
         <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
-      </head>
+      </head> */}
 
       <main>
         <Header />
