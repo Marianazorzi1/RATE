@@ -7,30 +7,30 @@ const LateralBar = () => {
         <nav className="nav_botoes_lateral">
           <div className="botoes_acima">
             <a href="#">
-              <img className="botoes" src="img/menu.png" alt="Menu" />
+              <img className="botoes" src="/img/menu.png" alt="Menu" />
             </a>
             <a href="inicial.html">
-              <img className="botoes" src="img/home.png" alt="Home" />
+              <img className="botoes" src="/img/home.png" alt="Home" />
             </a>
             <a href="comentarios.html">
-              <img className="botoes" src="img/comentários.png" alt="Comentários" />
+              <img className="botoes" src="/img/comentários.png" alt="Comentários" />
             </a>
             <a href="filmes.html">
-              <img className="botoes" src="img/filmes.png" alt="Filmes" />
+              <img className="botoes" src="/img/filmes.png" alt="Filmes" />
             </a>
-            <a href="generos.html">
-              <img className="botoes" src="img/generos.png" alt="Gêneros" />
+            <a href="/paginas/Generos">
+              <img className="botoes" src="/img/generos.png" alt="Gêneros" />
             </a>
-            <a href="atores.html">
-              <img className="botoes" src="img/atores.png" alt="Atores" />
+            <a href="/paginas/Atores">
+              <img className="botoes" src="/img/atores.png" alt="Atores" />
             </a>
             <a href="favoritos.html">
-              <img className="botoes" src="img/favoritos.png" alt="Favoritos" />
+              <img className="botoes" src="/img/favoritos.png" alt="Favoritos" />
             </a>
           </div>
           <div className="ultimo_botao">
             <a href="sugestoes.html">
-              <img className="botoes" src="img/sugestoes.png" alt="Sugestões" />
+              <img className="botoes" src="/img/sugestoes.png" alt="Sugestões" />
             </a>
           </div>
         </nav>
