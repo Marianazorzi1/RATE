@@ -1,8 +1,9 @@
 import React from 'react';
-import '../../paginas/ModSugsAtor/add_ator.css'; 
-import FormMenor from '../../components/FormMenor';
+import './adc_filme.css'; 
+import FormField from '../../components/FormField';
+import Classificacao from '../../components/ClassificacaoIMG';
 
-const ModsSugsAtor = () => {
+const AdcFilm = () => {
 
 //   const goBack = () => {
 //     window.history.back();
@@ -10,19 +11,22 @@ const ModsSugsAtor = () => {
 
   return (
     <div className="cards">
-      <div className="seta_voltar">
-        <button className="back-button" >&#8592;</button>
+      <div className="botoes">
+        <div className="seta_voltar">
+          <button className="back-button">&#8592;</button>
+        </div>
       </div>
       <div className="container">
         <h2>MODIFICAR SUGESTÃO</h2>
         <div className="form-container">
-          <img src="img/ator.webp" alt="Ator" className="ator-image" />
-          <FormMenor/>
+          <img src="img/marvel.jpeg" alt="Ator" className="ator-image" />
+          <FormField/>
           <form id="atorForm">
-            
+           
+            <Classificacao/>
             <div className="button-group">
               <a href="vizu_mi_sugs.html">
-                <button type="button" id="cance">Cancelar</button>
+                <button type="button" id="cancel">Cancelar</button>
               </a>
               <button type="submit" id="add">Modificar</button>
             </div>
@@ -33,4 +37,4 @@ const ModsSugsAtor = () => {
   );
 };
 
-export default ModsSugsAtor;
+export default AdcFilm;

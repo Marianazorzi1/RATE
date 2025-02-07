@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../paginas/ModSugsAtor/add_ator.css'; 
+import './adcAtor.css'; 
 import FormMenor from '../../components/FormMenor';
 
-const ModsSugsAtor = () => {
+const AdcAtor = () => {
 
 //   const goBack = () => {
 //     window.history.back();
@@ -14,7 +14,7 @@ const ModsSugsAtor = () => {
         <button className="back-button" >&#8592;</button>
       </div>
       <div className="container">
-        <h2>MODIFICAR SUGESTÃO</h2>
+        <h2>ADICIONAR ATOR</h2>
         <div className="form-container">
           <img src="img/ator.webp" alt="Ator" className="ator-image" />
           <FormMenor/>
@@ -24,7 +24,7 @@ const ModsSugsAtor = () => {
               <a href="vizu_mi_sugs.html">
                 <button type="button" id="cance">Cancelar</button>
               </a>
-              <button type="submit" id="add">Modificar</button>
+              <button type="submit" id="add">Adicionar</button>
             </div>
           </form>
         </div>
@@ -33,4 +33,4 @@ const ModsSugsAtor = () => {
   );
 };
 
-export default ModsSugsAtor;
+export default AdcAtor;

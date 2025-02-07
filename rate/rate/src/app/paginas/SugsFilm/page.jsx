@@ -19,8 +19,9 @@ function App() {
                 <h2>SUGERIR FILME</h2>
                 <div className="form-container">
                     <img src="img/marvel.jpeg" alt="Ator" className="ator-image" />
+                    <FormField/>
                     <form id="atorForm">
-                        <FormField/>
+                        
 
                         <Classificacao/>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Form = () => {
+const Formulario = () => {
   const InputField = ({ id, label, type = 'text', placeholder }) => (
     <div className="input-field">
       <label htmlFor={id}>{label}</label>
@@ -27,4 +27,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default Formulario;

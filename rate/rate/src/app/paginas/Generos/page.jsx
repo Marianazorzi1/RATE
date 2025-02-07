@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 const Generos = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
 
       <main>
         <section className="blocos_gen">
@@ -27,7 +27,7 @@ const Generos = () => {
           </div>
         </section>
 
-        {/* <LateralBar /> */}
+        <LateralBar />
       </main>
     </>
   );

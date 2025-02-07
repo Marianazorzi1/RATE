@@ -13,16 +13,12 @@ import PerfilComen from "./paginas/PerfilComen/page.jsx";
 import PerfilAmg from "./paginas/PerfilAmg/page.jsx";
 
 
-
-
-
-
 export default function Home() {
   return (
     <div>
       <main>
         
-        <FilmesADM />
+        {/* <FilmesADM /> */}
         {/* <AtoresADM /> */}
         {/* <Generos/> */}
         {/* <GenerosADM/> */}
@@ -35,6 +31,7 @@ export default function Home() {
         {/* <Perfil/> */}
         {/* <PerfilComen /> */}
         {/* <PerfilAmg /> */}
+        
 
         
       </main>

@@ -24,7 +24,7 @@ const LateralBar = () => {
             <a href="/paginas/Atores">
               <img className="botoes" src="/img/atores.png" alt="Atores" />
             </a>
-            <a href="favoritos.html">
+            <a href="/paginas/Favoritos">
               <img className="botoes" src="/img/favoritos.png" alt="Favoritos" />
             </a>
           </div>

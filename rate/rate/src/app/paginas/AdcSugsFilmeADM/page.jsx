@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../paginas/ModSugsFilm/mod_sugs_filme.css'; 
+import './adc_sugs_filmeADM.css'; 
 import FormField from '../../components/FormField';
 import Classificacao from '../../components/ClassificacaoIMG';
 
-const ModsSugsFilm = () => {
+const AdcSugsFilmADm = () => {
 
 //   const goBack = () => {
 //     window.history.back();
@@ -37,4 +37,4 @@ const ModsSugsFilm = () => {
   );
 };
 
-export default ModsSugsFilm;
+export default AdcSugsFilmADm;
