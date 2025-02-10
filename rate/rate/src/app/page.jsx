@@ -68,6 +68,9 @@ import AdcAtor from "./paginas/AdcAtor/page.jsx";
 import AdcGenero from "./paginas/AdcGenero/page.jsx";
 import AdcSugsFilmADM from "./paginas/AdcSugsFilmeADM/page.jsx";
 import AdcFilm from "./paginas/AdcFilme/page.jsx";
+import ClassificacaoAtor from "./paginas/ClassificacaoAtor/page.jsx";
+import ClassificacaoAtorADM from "./paginas/ClassificacaoAtorADM/page.jsx";
+import VizuSugsAtor from "./paginas/VizuSugsAtor/page.jsx";
 
 export default function Home() {
   return (
@@ -92,7 +95,10 @@ export default function Home() {
         {/* <AdcAtor/> */}
         {/* <AdcGenero/> */}
         {/* <AdcSugsFilmADM/> */}
-        <AdcFilm/>
+        {/* <AdcFilm/> */}
+        {/* <ClassificacaoAtor /> */}
+        {/* <ClassificacaoAtorADM/> */}
+        {/* <VizuSugsAtor/> */}
 
 
 

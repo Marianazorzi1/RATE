@@ -1,0 +1,170 @@
+/* Configurações gerais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #474747;
+}
+
+/* ---- Bloco de Atores ---- */
+.bloco-atores {
+    padding-top: 122px;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-right: 130vh;
+}
+
+.botao-voltar {
+    margin-right: 70px;
+    background-color: transparent;
+    font-size: 45%;
+    color: #fff;
+    position: fixed;
+}
+
+.botao-retorno {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.botao-retorno:hover {
+    color: #ccc;
+}
+
+.detalhes-ator {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+
+.parte1 {
+    width: 27.5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.parte2 {
+    width: 27.5%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50%;
+    margin-left: 100%;
+}
+
+.parte3 {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.nome-ator {
+    margin-left: 70px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: inline;
+}
+
+.moldura-cartaz {
+    width: 20vw;
+    height: 60vh;
+    background-color: #5c5c5c;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    position: fixed;
+    max-width: 300px;
+    max-height: 450px;
+    margin-left: 10%;
+}
+
+.info-ator {
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cartao-usuario {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #A8A8A8; 
+    padding: 15px;
+    margin-left: 35%;
+    margin-bottom: 200%;
+    margin-top: 0%;
+    width: max-content;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.icone-perfil {
+    width: 50px;
+    height: 50px;
+    background-color: #52057b; 
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    font-size: 20px;
+    margin-right: 10px; 
+}
+
+.nome-usuario {
+    font-size: 16px;
+    font-weight: bold;
+    color: black; 
+}
+
+.imagem-perfil {
+    width: 25px;
+    height: 25px;
+}
+
+.avaliacao {
+    display: flex;
+    gap: 10px;
+    margin-left: 380px;
+    margin-top: 80%;
+}
+
+.botao-like, .botao-dislike {
+    font-size: 35px;
+    color: white;
+    background-color: #474747;
+    cursor: pointer;
+}
+
+.numero-likes {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25;
+}
