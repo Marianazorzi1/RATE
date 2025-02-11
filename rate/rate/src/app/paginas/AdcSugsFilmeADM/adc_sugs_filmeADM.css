@@ -108,7 +108,7 @@ button {
     color: white;
 }
 
-button#cancel {
+button#cancelaa {
     background-color: #52057B;
 }
 
@@ -144,20 +144,23 @@ button#cancel {
     background-color: #3f3e3e;
 }
 
-#add {
+#addi {
     padding: 3%;
     margin: 2%;
+    font-size: 85%;
+    background-color: #52057B;
 }
 
-#cancel {
+#cancelaa {
     padding: 19.5%;
+    font-size: 85%;
 }
 
-#cancel:hover {
+#cancelaa:hover {
     background-color: #7e198f;
 }
 
-#add:hover {
+#addi:hover {
     background-color: #7e198f;
 }
 

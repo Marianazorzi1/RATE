@@ -75,6 +75,10 @@ import Sugestao from "./paginas/PgnSugestoes/page.jsx";
 import SugestaoAdm from "./paginas/PgnSugestoesAdm/page.jsx";
 import Filmes from "./paginas/PgnFilmes/page.jsx";
 import Inicial from "./paginas/PgnInicial/page.jsx";
+import Amigos from "./paginas/Amigos/page.jsx";
+import VisualizarSugestaoFilme from "./paginas/VizuSugsFilm/page.jsx";
+import VizuSugsADM from "./paginas/VizuSugsADM/page.jsx";
+import VizuMinSugs from "./paginas/VizuMinSugs/page.jsx";
 
 export default function Home() {
   return (
@@ -105,9 +109,12 @@ export default function Home() {
         {/* <VizuSugsAtor/> */}
         {/* <Sugestao/> */}
         {/* <SugestaoAdm/> */}
-        {/* <App/> */}
         {/* <Filmes/> */}
         {/* <Inicial/> */}
+        {/* <Amigos/> */}
+        {/* <VisualizarSugestaoFilme/> */}
+        <VizuSugsADM/>
+        {/* <VizuMinSugs/> */}
 
 
         

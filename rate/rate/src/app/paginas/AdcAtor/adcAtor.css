@@ -105,7 +105,7 @@ button {
     color: white;
 }
 
-button#cancel {
+button#cance {
     background-color: #52057B;
 }
 
@@ -189,10 +189,14 @@ button#cancel {
 #add{
     padding: 3%;
     margin: 2%;
+    font-size: 85%;
+    background-color: #52057B;
 }
 
 #cance{
-    padding: 10.5%;
+    padding: 3.5%;
+    font-size: 85%;
+    background-color: #52057B;
     
 }
 

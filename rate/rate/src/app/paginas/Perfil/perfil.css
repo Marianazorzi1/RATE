@@ -52,16 +52,17 @@ body .containe {
     position: relative;
 }
 
-.top-icons {
+.top-icones {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
 }
 
-.top-icon {
+.top-icones {
     width: 24px;
     height: 24px;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .content {
@@ -164,7 +165,7 @@ body .containe {
 }
 
 .back-button,
-.cont-button {
+.conta-botao {
     padding: 10px 30px;
     border: none;
     border-radius: 20px;
@@ -185,13 +186,15 @@ body .containe {
     transform: scale(1.05);
 }
 
-.cont-button {
+.conta-botao {
     background-color: #737373;
     color: #fff;
     transition: all 0.3s ease-in-out;
+    font-size: 85%;
+    margin-left: 15%;
 }
 
-.cont-button:hover {
+.conta-botao:hover {
     background-color: #595959;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);

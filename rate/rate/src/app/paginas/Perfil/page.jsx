@@ -1,7 +1,6 @@
 'use client';
-
 import React, { useState } from "react";
-import "../../paginas/Perfil/perfil.css";
+import "./perfil.css";
 
 const Perfil = () => {
   const [name, setName] = useState('');
@@ -89,10 +88,10 @@ const Perfil = () => {
     `}
   </style>
       <div className="top-icons">
-        <button onClick={handleDeleteAccount} className="top-icon">
+        <button onClick={handleDeleteAccount} className="top-icones">
           <img src="img/🦆 icon _Trash_.png" alt="Trash Icon" className="volta" />
         </button>
-        <button onClick={handleExitAccount} className="top-icon">
+        <button onClick={handleExitAccount} className="top-icones">
           <img src="img/🦆 icon _door leave_.png" alt="Exit Icon" className="lixo" />
         </button>
       </div>
@@ -150,7 +149,7 @@ const Perfil = () => {
                 </div>
               </div>
 
-              <button type="submit" className="cont-button">Salvar</button>
+              <button type="submit" className="conta-botao">Salvar</button>
             </form>
           </div>
         </div>

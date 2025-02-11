@@ -26,9 +26,9 @@ const AdcSugsFilmADm = () => {
             <Classificacao/>
             <div className="button-group">
               <a href="vizu_mi_sugs.html">
-                <button type="button" id="cancel">Cancelar</button>
+                <button type="button" id="cancelaa">Cancelar</button>
               </a>
-              <button type="submit" id="add">Modificar</button>
+              <button type="submit" id="addi">Modificar</button>
             </div>
           </form>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../paginas/SugsFilm/sugs_filme.css';
+import './sugs_filme.css';
 import FormField from '../../components/FormField';
 import Classificacao from '../../components/ClassificacaoIMG';
 
@@ -27,9 +27,9 @@ function App() {
 
                         <div className="button-group">
                             <a href="sugestoes.html">
-                                <button type="button" id="cancel">Cancelar</button>
+                                <button type="button" id="cance">Cancelar</button>
                             </a>
-                            <button type="submit" id="add">Sugerir</button>
+                            <button type="submit" id="ad">Sugerir</button>
                         </div>
                     </form>
                 </div>

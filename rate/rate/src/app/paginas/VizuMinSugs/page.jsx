@@ -1,9 +1,9 @@
 import React from "react";
-import "./vizu_sugs_ator.css";
+import "./vizu_min_sug.css";
 import Header from "@/app/components/Header";
 import LateralBar from "@/app/components/LateralBar";
 
-const VizuSugsAtor = () => {
+const VizuMinSugs = () => {
 
   return (
     <div>
@@ -36,12 +36,20 @@ const VizuSugsAtor = () => {
                   <span className="username">@fulanotany</span>
                 </div>
               </a>
+              <div className="adc_remov_button">
+                        <a href="add_sugs_ator_ADM.html">
+                            <div className="adicionar"><button className="adc_button">Modificar</button></div>
+                        </a>
+                        <a href="sugestoes_ADM.html">
+                            <div className="remover"><button className="remove_button">Renovar</button></div>
+                        </a>
+                    </div>
               <div className="avaliacao">
-                <button className="ok">
+                <button className="k">
                   <span className="likes">0 </span>
                   <i className="fas fa-thumbs-up"></i>
                 </button>
-                <button className="nok">
+                <button className="nk">
                   <span className="likes">0 </span>
                   <i className="fas fa-thumbs-down"></i>
                 </button>
@@ -58,5 +66,5 @@ const VizuSugsAtor = () => {
   );
 };
 
-export default VizuSugsAtor;
+export default VizuMinSugs;
 

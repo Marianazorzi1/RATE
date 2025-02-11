@@ -87,13 +87,13 @@ const PerfilAmg = () => {
 
               <div>
                 <a href="ver-comentarios.html">
-                  <button type="button" className="outer-button">
+                  <button type="button" className="conta-botao">
                     Ver comentários
                   </button>
                 </a>
               </div>
 
-              <button type="submit" className="cont-button">
+              <button type="submit" className="conta-botao">
                 Voltar
               </button>
             </form>

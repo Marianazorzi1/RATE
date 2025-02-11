@@ -108,8 +108,10 @@ button {
     color: white;
 }
 
-button#cancel {
+button#can {
     background-color: #52057B;
+    
+
 }
 
 .img_classificacao {
@@ -149,11 +151,13 @@ button#cancel {
     margin: 2%;
 }
 
-#cancel {
+#can {
     padding: 19.5%;
+    font-size: 85%;
+    background-color: #52057B;
 }
 
-#cancel:hover {
+#can:hover {
     background-color: #7e198f;
 }
 

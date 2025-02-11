@@ -1,9 +1,9 @@
 import React from "react";
-import "./vizu_sugs_ator.css";
+import "./vizu_sugs_filme.css";
 import Header from "@/app/components/Header";
 import LateralBar from "@/app/components/LateralBar";
 
-const VizuSugsAtor = () => {
+const VisualizarSugestaoFilme = () => {
 
   return (
     <div>
@@ -12,7 +12,7 @@ const VizuSugsAtor = () => {
       <main>
         <section className="blocos_filmes">
           <div className="seta_voltar">
-            <button className="bac-button">&#8592;</button>
+            <button className="backa-button">&#8592;</button>
           </div>
           <div className="movie-details">
             <div className="part1">
@@ -22,10 +22,15 @@ const VizuSugsAtor = () => {
               </div>
             </div>
             <div className="parte2">
-              <p className="nam">Nome:</p>
-              <p className="nam">Idade:</p>
-              <p className="nam">Nascimento:</p>
-              
+              <p className="nam">Diretor:</p>
+              <p className="nam">Sinopse:</p>
+              <p className="nam">Produtor:</p>
+              <p className="nam">Elenco:</p>
+              <p className="nam">Gênero:</p>
+              <p className="nam">Data de Lançamento:</p>
+              <div className="movie-rating-badge">
+                <img className="livre" src="img/AL.jpg" alt="Indicação livre" />
+              </div>
             </div>
             <div className="parte3">
               <a href="perfil_comen.html">
@@ -58,5 +63,4 @@ const VizuSugsAtor = () => {
   );
 };
 
-export default VizuSugsAtor;
-
+export default VisualizarSugestaoFilme;

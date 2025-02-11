@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../paginas/ModSugsFilm/mod_sugs_filme.css'; 
+import './mod_sugs_filme.css'; 
 import FormField from '../../components/FormField';
 import Classificacao from '../../components/ClassificacaoIMG';
 
@@ -26,7 +26,7 @@ const ModsSugsFilm = () => {
             <Classificacao/>
             <div className="button-group">
               <a href="vizu_mi_sugs.html">
-                <button type="button" id="cancel">Cancelar</button>
+                <button type="button" id="can">Cancelar</button>
               </a>
               <button type="submit" id="add">Modificar</button>
             </div>

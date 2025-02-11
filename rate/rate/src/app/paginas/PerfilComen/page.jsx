@@ -105,7 +105,7 @@ const PerfilComen = () => {
                 </div>
               </div>
 
-              <button type="submit" className="cont-button">Voltar</button>
+              <button type="submit" className="conta-botao">Voltar</button>
             </form>
           </div>
         </div>
