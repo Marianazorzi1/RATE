@@ -71,6 +71,10 @@ import AdcFilm from "./paginas/AdcFilme/page.jsx";
 import ClassificacaoAtor from "./paginas/ClassificacaoAtor/page.jsx";
 import ClassificacaoAtorADM from "./paginas/ClassificacaoAtorADM/page.jsx";
 import VizuSugsAtor from "./paginas/VizuSugsAtor/page.jsx";
+import Sugestao from "./paginas/PgnSugestoes/page.jsx";
+import SugestaoAdm from "./paginas/PgnSugestoesAdm/page.jsx";
+import Filmes from "./paginas/PgnFilmes/page.jsx";
+import Inicial from "./paginas/PgnInicial/page.jsx";
 
 export default function Home() {
   return (
@@ -99,7 +103,11 @@ export default function Home() {
         {/* <ClassificacaoAtor /> */}
         {/* <ClassificacaoAtorADM/> */}
         {/* <VizuSugsAtor/> */}
-
+        {/* <Sugestao/> */}
+        {/* <SugestaoAdm/> */}
+        {/* <App/> */}
+        {/* <Filmes/> */}
+        {/* <Inicial/> */}
 
 
         
