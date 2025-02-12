@@ -3,7 +3,7 @@ import Header from "@/app/components/Header";
 import './cometarios.css';
 import LateralBar from "@/app/components/LateralBar";
 
-const RateComentarios = () => {
+const Comentarios = () => {
   return (
     <div>
       <Header/>
@@ -59,4 +59,4 @@ const RateComentarios = () => {
   );
 };
 
-export default RateComentarios;
+export default Comentarios;

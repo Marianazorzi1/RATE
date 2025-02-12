@@ -20,7 +20,7 @@ const Comentarios = () => {
                 <div className="bloco" key={index}>
                   <div className="img_come">
                     <a href="perfil_comen.html">
-                      <img className="perfil" src="img/Perfil.png" alt="Perfil" />
+                      <img className="perfi" src="img/Perfil.png" alt="Perfil" />
                     </a>
                   </div>
                   <div className="blocos_in">

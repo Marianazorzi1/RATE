@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@253&family=Nerko+One&family=Protest+Guerrilla&display=swap');
+import React from "react";
+// import "./class_filme.css";
+import Header from "@/app/components/Header";
+import LateralBar from "@/app/components/LateralBar";
+
+const ClassFilmADM = () => {
+    return (
+        <><style>
+        {`
+          @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@253&family=Nerko+One&family=Protest+Guerrilla&display=swap');
 
 * {
     padding: 0;
@@ -157,7 +166,7 @@ body {
 }
 
 /* Blocos */
-.blocos_filmes {
+.filminho {
     padding-top: 122px;
     padding-left: 10%;
     padding-right: 5%;
@@ -170,33 +179,36 @@ body {
     width: 100%;
 }
 
-.seta_voltar {
+.seta_volta {
     position: fixed;
     width: 50%;
     margin-left: -3%;
-    margin-top: -3%;
+    margin-top: -2%;
 }
 
-.back-button {
+.black-button {
     background-color: transparent;
     border: none;
     color: #fff;
     font-size: 24px;
     cursor: pointer;
+    /* margin-right: 20%; */
+    margin-left: -70%;
+    margin-top: -3%;
 }
 
 .back-button:hover {
     color: #ccc;
 }
 
-.info {
+.informacao {
     margin-top: 5vh;
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.movie-info {
+.mov-info {
     width: 50%;
     margin-right: 5%;
     display: flex;
@@ -204,7 +216,7 @@ body {
     gap: 4vh;
 }
 
-.details {
+.detalhes {
     position: fixed;
     width: 100%;
     display: flex;
@@ -222,7 +234,7 @@ body {
     gap: 2vh;
 }
 
-.part2 {
+.par2 {
     width: max-content;
     display: flex;
     flex-direction: column;
@@ -230,56 +242,65 @@ body {
     justify-content: center;
     align-items: flex-start;
     gap: 2vh;
+    margin-left: -20%;
+    margin-top: -40%;
+ 
 }
 
 
-.movie-title {
+.movie-titulo {
     font-size: 28px;
     font-family: "Montserrat", sans-serif;
     color: #FFF;
+    margin-left: -220%;
 }
 
-.movie-rating {
+.movie-ava {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
 }
 
-.rating-star {
+.rating-strela {
     font-size: 20px;
     color: gold;
+    margin-left: -1000%;
 }
 
-.rating-value {
+.rating-valor {
     font-size: 18px;
     color: white;
 }
 
-.movie-text {
+.mov-text {
     color: #FFF;
     font-family: "Montserrat", sans-serif;
+    margin-left: -280%;
+    margin-top: 70%;
 }
 
-.movie-text p {
+.mov-text p {
     margin: 5px 0;
 }
 
-.movie-image {
+.movi-imag {
     width: 14vw;
     height: 40vh;
     background-color: #5c5c5c;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    margin-left: -220%;
+    
 }
 
-.livre {
+.livr {
     width: 40px;
     height: 40px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.mod_remov_button {
+.mod_remov_botao {
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -291,23 +312,49 @@ body {
     bottom: 0;
 }
 
-.remover {
+.removerr {
     width: 40%;
+    color: white;
+    border: none; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 25px; 
+    margin-top: 90%;
+    
 }
 
-.modificar {
+.modificarr {
     width: 40%;
+    color: white;
+    border: none; 
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 25px; 
+    margin-top: 348%;
+    margin-left: 20px;
 }
 
-.remove_button {
+.remove_botao {
     background-color: #B60B0D;
-    padding: 10px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
     font-family: "Inter", sans-serif;
     font-style: normal;
     color: #FFF;
+    margin-top: 310%;
+    font-size: 85%;
+    margin-left: 80%;
 }
 
 .remove_button:hover {
@@ -329,30 +376,14 @@ body {
     background-color: #959595;
 }
 
-.comments-section {
+.comments-secao {
     margin-left: 10%;
     width: 40%;
-    margin-top: -20px;
+    margin-top: 15px;
+    
 }
 
-.env  {
-    background-color: #52057b; 
-    color: white;
-    border: none; 
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block; 
-    font-size: 16px; 
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 25px; 
-    margin-top: 10px;
-  }
 
-.env:hover {
-    background-color: #7e198f;
-}
   
 
 .comments-section h2 {
@@ -363,20 +394,22 @@ body {
     color: #FFF;
 }
 
-.comment {
+.coment {
     border-radius: 15px;       
     padding: 10px;            
     margin-bottom: 15px;      
     background-color: #545454; 
     width: 85%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    padding-right: 1500%;
 }
-#adcCom{
-    width: 85%;
+#adcComen{
+    width: 185%;
     height: 45px;
     border-radius: 15px;  
     color: #fff; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    
 }
 
 
@@ -390,7 +423,7 @@ body {
     cursor: pointer;
 }
 
-.add-comment input {
+.adicionar-comment input {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -398,6 +431,7 @@ body {
     background-color: #4a4a4a;
     color: white;
     margin-top: 10px;
+    padding-right: 800%;
 }
 
 .blocos {
@@ -416,45 +450,7 @@ body {
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
-/* Estilo do botão de menu */
-.menu-btn {
-    display: none;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #52057b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    z-index: 1000;
-    cursor: pointer;
-}
 
-.menu-btn i {
-    font-size: 20px;
-}
-
-/* Estilo do botão de menu */
-.menu-btn {
-    display: none;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #52057b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    z-index: 1000;
-    cursor: pointer;
-}
-
-.menu-btn i {
-    font-size: 20px;
-}
-
-/* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     .rate {
         font-size: 26px;
@@ -474,7 +470,7 @@ body {
     }
 }
 
-/* All Mobile Sizes (devices and browser) */
+
 @media only screen and (max-width: 767px) {
     .rate{
         font-size: 26px;
@@ -495,7 +491,7 @@ body {
     }
 }
 
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .rate {
         font-size: 25px;
@@ -516,7 +512,7 @@ body {
     }
 }
 
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
 @media only screen and (max-width: 479px) {
     .rate { 
         font-size: 22px;
@@ -559,3 +555,75 @@ body {
         height: 25px;
     }
 }
+
+    
+        `}
+      </style>
+            <Header/>
+            <main>
+                <section className="filminho">
+                    <div className="seta_volta">
+                        <button className="black-button">&#8592;</button>
+                    </div>
+                    <div className="informacao">
+                        <div className="mov-info">
+                            <div className="detalhes">
+                                <div className="part1">
+                                    <h1 className="movie-titulo">Nome do filme</h1>
+                                    <div className="movie-ava">
+                                        <span className="rating-strela">⭐</span>
+                                        <span className="rating-valor">4,7</span>
+                                    </div>
+                                    <div className="movi-imag">
+                                        <img  alt="" />
+                                    </div>
+                                    <div className="par2">
+                                    <div className="mov-text">
+                                        <p><strong>Data de Lançamento:</strong></p>
+                                        <p><strong>Sinopse:</strong></p>
+                                        <p><strong>Diretor:</strong></p>
+                                        <p><strong>Produtor:</strong></p>
+                                        <p><strong>Elenco:</strong></p>
+                                        <p><strong>Gênero:</strong></p>
+                                        <div className="movie-rating-badge">
+                                        <img className="livr" src="img/AL.jpg" alt="Indicação livre" />
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                                
+                            </div>
+                            <div className="comments-secao">
+                            <h2>Comentários:</h2>
+                            <div className="comment-caixa">
+                                {[...Array(5)].map((_, i) => (
+                                    <div className="coment" key={i}>
+                                        <p>0 👍🏻</p>
+                                    </div>
+                                ))}
+                                <div className="adicionar-comment">
+                                    <input type="text" placeholder="Adicionar comentário" id="adcComen" />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                            <div className="mod_remov_botao">
+                                <div className="removerr"><button className="remove_botao">Remover</button></div>
+                                <a href="mod_sugs_filme.html">
+                                    <div className="modificarr"><button className="mod_button">Modificar</button></div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section>
+                   <LateralBar/>
+                </section>
+            </main>
+        </>
+    );
+};
+
+export default ClassFilmADM;

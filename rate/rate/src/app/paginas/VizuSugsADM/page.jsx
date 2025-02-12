@@ -36,7 +36,7 @@ const VizuSugsADM = () => {
                   <span className="username">@fulanotany</span>
                 </div>
               </a>
-              <div class="adc_remov_button">
+              <div className="adc_remov_button">
                         <a href="add_sugs_ator_ADM.html">
                             <div className="adicionar"><button className="adc_button">Adicionar</button></div>
                         </a>
@@ -46,11 +46,11 @@ const VizuSugsADM = () => {
                     </div>
               <div className="avaliacao">
                 <button className="k">
-                  <span className="likes">0 </span>
+                  {/* <span className="likes">0 </span> */}
                   <i className="fas fa-thumbs-up"></i>
                 </button>
                 <button className="nk">
-                  <span className="likes">0 </span>
+                  {/* <span className="likes">0 </span> */}
                   <i className="fas fa-thumbs-down"></i>
                 </button>
               </div>

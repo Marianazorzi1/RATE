@@ -298,9 +298,19 @@ body {
 }
 .ok{
     font-size: 180%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-left:5% ;
+    margin-bottom: 0%;
 }
 .nok{
     font-size: 180%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-left:5% ;
+    margin-bottom: 0%;
 }
 
 .username {

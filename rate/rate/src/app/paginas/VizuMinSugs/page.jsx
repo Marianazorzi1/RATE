@@ -12,7 +12,7 @@ const VizuMinSugs = () => {
       <main>
         <section className="blocos_filmes">
           <div className="seta_voltar">
-            <button className="bac-button">&#8592;</button>
+            <button className="bac-butto">&#8592;</button>
           </div>
           <div className="movie-details">
             <div className="part1">
@@ -38,19 +38,19 @@ const VizuMinSugs = () => {
               </a>
               <div className="adc_remov_button">
                         <a href="add_sugs_ator_ADM.html">
-                            <div className="adicionar"><button className="adc_button">Modificar</button></div>
+                            <div className="adicionar"><button className="ad_button">Modificar</button></div>
                         </a>
                         <a href="sugestoes_ADM.html">
-                            <div className="remover"><button className="remove_button">Renovar</button></div>
+                            <div className="remover"><button className="remove_butto">Remover</button></div>
                         </a>
                     </div>
               <div className="avaliacao">
                 <button className="k">
-                  <span className="likes">0 </span>
+                  {/* <span className="likes">0 </span> */}
                   <i className="fas fa-thumbs-up"></i>
                 </button>
-                <button className="nk">
-                  <span className="likes">0 </span>
+                <button className="n">
+                  {/* <span className="likes">0 </span> */}
                   <i className="fas fa-thumbs-down"></i>
                 </button>
               </div>

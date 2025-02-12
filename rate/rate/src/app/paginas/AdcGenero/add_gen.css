@@ -112,16 +112,18 @@ button {
     margin: 2%;
 }
 
-#canc{
-    padding: 3.5%;
+#ca{
+    padding: 3%;
+    font-size: 90%;
+    
     
 }
 
-button#canc {
+button#ca {
     background-color: #52057B;
 }
 
-#cance:hover {
+#ca:hover {
     background-color: #7e198f;
 }
 

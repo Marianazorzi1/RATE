@@ -1,5 +1,5 @@
 import React from "react";
-import "../../paginas/FilmesADM/filmes_ADM.css"; 
+import "./filmes_ADM.css"; 
 import Header from "../../components/Header.jsx";
 import LateralBar from "../../components/LateralBar";
 

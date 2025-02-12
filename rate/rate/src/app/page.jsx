@@ -79,13 +79,23 @@ import Amigos from "./paginas/Amigos/page.jsx";
 import VisualizarSugestaoFilme from "./paginas/VizuSugsFilm/page.jsx";
 import VizuSugsADM from "./paginas/VizuSugsADM/page.jsx";
 import VizuMinSugs from "./paginas/VizuMinSugs/page.jsx";
+import MinSugestao from "./paginas/PgnMinhasSugestoes/page.jsx";
+import ClassFilm from "./paginas/ClassFilm/page.jsx";
+import ClassFilmADM from "./paginas/ClassFilmADM/page.jsx";
+import CriarConta from "./paginas/CriarConta1/page.jsx";
+import CriarConta2 from "./paginas/CriarConta2/page.jsx";
+import CriarConta3 from "./paginas/CriarConta3/page.jsx";
+import Login from "./paginas/Login/page.jsx";
+import RedefinirSenha1 from "./paginas/RedefSenha1/page.jsx";
+import RedefinirSenha2 from "./paginas/RedefSenha2/page.jsx";
+import RedefinirSenha3 from "./paginas/RedefSenha3/page.jsx";
 
 export default function Home() {
   return (
     <div>
       <main>
         
-        {/* <FilmesADM /> */}
+        <FilmesADM />
         {/* <AtoresADM /> */}
         {/* <Generos/> */}
         {/* <GenerosADM/> */}
@@ -113,8 +123,18 @@ export default function Home() {
         {/* <Inicial/> */}
         {/* <Amigos/> */}
         {/* <VisualizarSugestaoFilme/> */}
-        <VizuSugsADM/>
+        {/* <VizuSugsADM/> */}
         {/* <VizuMinSugs/> */}
+        {/* <MinSugestao/> */}
+        {/* <ClassFilm/> */}
+        {/* <ClassFilmADM/> */}
+        {/* <CriarConta/> */}
+        {/* <CriarConta2/> */}
+        {/* <CriarConta3/> */}
+        {/* <Login/> */}
+        {/* <RedefinirSenha1/> */}
+        {/* <RedefinirSenha2/> */}
+        {/* <RedefinirSenha3/> */}
 
 
         

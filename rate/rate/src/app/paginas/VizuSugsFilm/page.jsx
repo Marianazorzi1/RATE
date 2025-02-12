@@ -43,11 +43,11 @@ const VisualizarSugestaoFilme = () => {
               </a>
               <div className="avaliacao">
                 <button className="ok">
-                  <span className="likes">0 </span>
+                  {/* <span className="likes">0 </span> */}
                   <i className="fas fa-thumbs-up"></i>
                 </button>
                 <button className="nok">
-                  <span className="likes">0 </span>
+                  {/* <span className="likes">0 </span> */}
                   <i className="fas fa-thumbs-down"></i>
                 </button>
               </div>

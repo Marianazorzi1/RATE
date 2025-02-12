@@ -19,7 +19,7 @@ const AdcGenero = () => {
             <label htmlFor="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Digite o nome" required />
             <div className="button-group">
-              <button type="button" id="canc" >
+              <button type="button" id="ca" >
                 Cancelar
               </button>
               <button type="submit" id="add">Adicionar</button>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../paginas/Favoritos/favoritos.css";
+import "./favoritos.css";
 import Header from "../../components/Header";
 import LateralBar from "../../components/LateralBar";
 

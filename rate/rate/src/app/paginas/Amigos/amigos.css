@@ -228,7 +228,7 @@ body {
     align-items: center;
 }
 
-.perfil {
+.perfi {
     height: 80px;
     width: 80px;
 }
@@ -252,23 +252,25 @@ body {
 
 .vizu_amg{
     margin-top: 3%;
-    border-radius: 6%;
+    border-radius: 5%;
     margin: 2%;
-    width: 80%;
+    width: 70%;
     height: 25px;
     color: #FFF;
-    font-size: 14px;
-    padding: 2%;
+    font-size: 12px;
+    padding: 3%;
+    margin-left: 10%;
 
 }
 .rem_amg{
-    border-radius: 6%;
+    border-radius: 5%;
     margin: 2%;
-    width: 80%;
+    width: 70%;
     height: 25px;
     color: #FFF;
-    font-size: 14px;
-    padding: 2%;
+    font-size: 12px;
+    padding: 3%;
+    margin-left: 10%;
 }
 
 p {

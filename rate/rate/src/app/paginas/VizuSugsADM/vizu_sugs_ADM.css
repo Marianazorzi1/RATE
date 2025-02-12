@@ -299,9 +299,19 @@ body {
 .k{
     font-size: 180%;
     margin-left: 150%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 50%;
+   
 }
 .nk{
     font-size: 180%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-left:5% ;
+    margin-bottom: 50%;
 }
 
 .username {
@@ -354,9 +364,10 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1vh;
-    margin-top: 280px;
+    margin-top: 380px;
     margin-right: 50%;
     margin-left: 20%;
+   
 }
 
 .adicionar{

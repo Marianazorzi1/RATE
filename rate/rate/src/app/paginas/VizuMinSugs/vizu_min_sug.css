@@ -181,13 +181,13 @@ body {
     margin-left: -2%;
 }
 
-.bac-button {
+.bac-butto {
     background-color: transparent;
     border: none;
     color: #fff;
     font-size: 34px;
     cursor: pointer;
-    margin-left: -150%;
+    margin-left: -50%;
     margin-top: 0;
 
 }
@@ -300,10 +300,21 @@ body {
 .k{
     font-size: 180%;
     margin-left: 150%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 50%;
    
 }
-.nk{
+.n{
     font-size: 180%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-left:5% ;
+    margin-bottom: 50%;
+   
+    
     
 }
 
@@ -351,6 +362,18 @@ button {
     z-index: 1000;
     cursor: pointer;
 }
+.remove_butto {
+    background-color: #B60B0D;
+    width: max-content;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    color: #FFF;
+    font-size: 15px;
+}
 .adc_remov_button {
     display: flex;
     flex-direction: row;
@@ -361,9 +384,27 @@ button {
     margin-right: 50%;
     margin-left: 20%;
 }
+.ad_button {
+    width: max-content;
+    background-color: #52057B;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    color: #FFF;
+    font-size: 15px;
+    
+}
+
+.ad_button:hover {
+    background-color: #7e198f
+}
 
 .adicionar{
     margin-left: -180%;
+   
 }
 .remover{
     margin-top: -75%;
