@@ -1,4 +1,4 @@
-import Header from "../../components/Header";
+import Header from "../../components/header/Header";
 import "./vizu_mi_sugs.css"; 
 import LateralBar from "../../components/LateralBar";
 

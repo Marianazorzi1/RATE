@@ -1,5 +1,5 @@
 import React from 'react';
-import './adc_filme.css'; 
+import styles from './adcFilme.module.css'
 import FormField from '../../components/FormField';
 import Classificacao from '../../components/ClassificacaoIMG';
 
@@ -10,25 +10,25 @@ const AdcFilm = () => {
 //   };
 
   return (
-    <div className="cards">
-      <div className="botoes">
-        <div className="seta_voltar">
-          <button className="back-button">&#8592;</button>
+    <div className={styles.cards}>
+      <div className={styles.botoes}>
+        <div className={styles.seta_voltar}>
+          <button className={styles.back-button}>&#8592;</button>
         </div>
       </div>
-      <div className="container">
+      <div className={styles.container}>
         <h2>MODIFICAR SUGESTÃO</h2>
-        <div className="form-container">
-          <img src="img/marvel.jpeg" alt="Ator" className="ator-image" />
+        <div className={styles.form-container}>
+          <img src="img/marvel.jpeg" alt="Ator" className={styles.ator-image} />
           <FormField/>
-          <form id="atorForm">
+          <form className={styles.atorForm}>
            
             <Classificacao/>
-            <div className="button-group">
+            <div className={styles.button-group}>
               <a href="vizu_mi_sugs.html">
-                <button type="button" id="cancela">Cancelar</button>
+                <button type="button" className={styles.cancela}>Cancelar</button>
               </a>
-              <button type="submit" id="addd">Modificar</button>
+              <button type="submit" className={styles.addd}>Modificar</button>
             </div>
           </form>
         </div>

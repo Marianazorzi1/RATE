@@ -1,26 +1,26 @@
 // components/Header.jsx
 import React from 'react';
 import Image from 'next/image'; 
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import styles from './Header.module.css'
 
 
 const Header = () => {
   return (
     <header>
-      <div className="header">
-        <div className="cor1">
-          <h1 className="rate">RATE</h1>
-          <h2 className="movie">MOVIE REVIEW</h2>
+      <div className={styles.header}>
+        <div className={styles.cor1}>
+          <h1 className={styles.rate}>RATE</h1>
+          <h2 className={styles.movie}>MOVIE REVIEW</h2>
         </div>
-        <div className="cinzacl"></div>
-        <div className="cinzaes">
-          <i className="fas fa-search" id="lupa"></i>
+        <div className={styles.cinzacl}></div>
+        <div className={styles.cinzaes}>
+          <i className={styles.search} id={styles.lupa}></i>
         </div>
-        <div className="preto">
-          <div className="botoes_perfil">
+        <div className={styles.preto}>
+          <div className={styles.botoes_perfil}>
             <button>
               <Image
-                id="sino"
+                id={styles.sino}
                 src="/img/notificacao.png" 
                 alt="Sino de notificação"
                 width={24} 
@@ -30,7 +30,7 @@ const Header = () => {
             <button>
               <a href="amigos.html">
                 <Image
-                  id="tres"
+                  id={styles.tres}
                   src="/img/amigos.png" 
                   alt="Ícone de amigos"
                   width={24}
@@ -41,7 +41,7 @@ const Header = () => {
             <button>
               <a href="perfil.html">
                 <Image
-                  id="perfil"
+                  id={styles.perfil}
                   src="https://img.icons8.com/?size=100&id=85147&format=png&color=737373" 
                   alt="Ícone de perfil"
                   width={24}

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../paginas/AtoresADM/atores_ADM.css"; 
-import Header from "../../components/Header";
+import Header from "../../components/header/Header";
 import LateralBar from "../../components/LateralBar";
 
 const AtoresADM = () => {

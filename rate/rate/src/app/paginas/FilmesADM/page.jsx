@@ -1,6 +1,6 @@
 import React from "react";
 import "./filmes_ADM.css"; 
-import Header from "../../components/Header.jsx";
+import Header from "../../components/header/Header.jsx/index.js";
 import LateralBar from "../../components/LateralBar";
 
 const FilmesADM = () => {

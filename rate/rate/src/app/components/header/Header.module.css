@@ -1,0 +1,95 @@
+.header{
+    width: 100%;
+    height: 8vh;
+    min-height: 4vh;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    right: 0;
+}
+
+.cor1{
+    background-color: #52057b;
+    height: 7vh;
+    min-height: 70px;
+    width: 23.75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.rate {
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    color: aliceblue;
+    font-size: 28px;
+    margin-left: 7%;
+}
+
+.movie  {
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-left: 12%;
+}        
+
+.cinzacl{
+    background-color: #737373;
+    height: 7vh;
+    min-height: 70px;
+    width: 23.75%;
+    /* position: fixed; */
+}
+
+.cinzaes{
+    background-color: #545454;
+    height: 7vh;
+    min-height: 70px;
+    width: 23.75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#lupa{
+    width: 80%;
+    margin-left: 6%;
+    margin-right: 14%;
+    font-size: 28px;
+}
+
+
+.preto{
+    background-color: #000000;
+    height: 7vh;
+    min-height: 70px;
+    width: 23.75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.botoes_perfil {
+    width: 80%;
+    height: 7vh;
+    margin-left: 12%;
+    margin-right: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.botoes_perfil button {
+    background-color: #000000;
+    border: 0;
+}
+
+.botoes_perfil img {
+    height: 40px;
+    width: 40px;
+}

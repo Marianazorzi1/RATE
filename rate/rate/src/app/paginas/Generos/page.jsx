@@ -1,7 +1,7 @@
 import React from "react";
 import "../../paginas/Generos/generos.css";
 import LateralBar from "../../components/LateralBar";
-import Header from "../../components/Header";
+import Header from "../../components/header/Header";
 
 const Generos = () => {
   return (

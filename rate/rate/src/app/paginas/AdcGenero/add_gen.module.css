@@ -1,18 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #2C2C2C;
-    color: white;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-
 .cards {
     margin-top: -37%;
     width: 100%;
@@ -107,27 +92,27 @@ button {
     background-color: #52057B;
     color: white;
 }
-#add{
+.add{
     padding: 3%;
     margin: 2%;
 }
 
-#ca{
+.ca{
     padding: 3%;
     font-size: 90%;
     
     
 }
 
-button#ca {
+button.ca {
     background-color: #52057B;
 }
 
-#ca:hover {
+.ca:hover {
     background-color: #7e198f;
 }
 
-#add:hover {
+.add:hover {
     background-color: #7e198f;
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './adcAtor.css'; 
+import styles from './adcAtor.module.css'
 import FormMenor from '../../components/FormMenor';
 
 const AdcAtor = () => {
@@ -9,22 +9,22 @@ const AdcAtor = () => {
 //   };
 
   return (
-    <div className="cards">
-      <div className="seta_voltar">
-        <button className="back-button" >&#8592;</button>
+    <div className={styles.cards}>
+      <div className={styles.seta_voltar}>
+        <button className={styles.back-button} >&#8592;</button>
       </div>
-      <div className="container">
-        <h2>ADICIONAR ATOR</h2>
-        <div className="form-container">
-          <img src="img/ator.webp" alt="Ator" className="ator-image" />
+      <div className={styles.container}>
+        <h2 className={styles.h2}>ADICIONAR ATOR</h2>
+        <div className={styles.form-container}>
+          <img src="img/ator.webp" alt="Ator" className={styles.ator-image} />
           <FormMenor/>
-          <form id="atorForm">
+          <form className={styles.atorForm}>
             
-            <div className="button-group">
+            <div className={styles.button-group}>
               <a href="vizu_mi_sugs.html">
-                <button type="button" id="cance">Cancelar</button>
+                <button type="button" className={styles.cance}>Cancelar</button>
               </a>
-              <button type="submit" id="add">Adicionar</button>
+              <button type="submit" className={styles.add}>Adicionar</button>
             </div>
           </form>
         </div>

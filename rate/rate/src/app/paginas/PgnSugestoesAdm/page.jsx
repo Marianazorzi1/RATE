@@ -1,4 +1,4 @@
-import Header from "../../components/Header";
+import Header from "../../components/header/Header";
 import "./vizu_sugs_ADM.css"; 
 import LateralBar from "../../components/LateralBar";
 
