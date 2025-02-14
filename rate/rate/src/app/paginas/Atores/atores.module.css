@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@253&family=Nerko+One&family=Protest+Guerrilla&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-body {
+
+.body {
     background-color: #474747;
 }
-
 
 
 
@@ -59,7 +54,7 @@ body {
     align-self: center;
 }
 
-
+/* Cabeçalho */
 .header{
     width: 100%;
     height: 8vh;
@@ -69,7 +64,6 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     right: 0;
-
 }
 
 .cor1{
@@ -169,7 +163,7 @@ body {
 
 
 /* Blocos */
-.blocos_atores {
+.blocos_ato {
     padding-top: 122px;
     padding-left: 10%;
     padding-right: 5%;
@@ -180,7 +174,7 @@ body {
     gap: 5vh ;
 }
 
-.info_ator {
+.info_ato {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -193,7 +187,7 @@ body {
     font-size: 20px;
 }
 
-.atores h1 {
+.generos h1 {
     font-size: 20px;
 }
 

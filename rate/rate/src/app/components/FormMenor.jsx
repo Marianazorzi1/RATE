@@ -3,13 +3,14 @@ import React from 'react';
 const FormMenor = () => {
   const InputField = ({ id, label, type = 'text', placeholder }) => (
     <div className="input-field">
-      <label htmlFor={id}>{label}</label>
+      <label htmlFor={id} id="label">{label}</label>
       <input 
         type={type} 
         id={id} 
         name={id} 
         placeholder={placeholder} 
         required 
+        className='input'
       />
     </div>
   );

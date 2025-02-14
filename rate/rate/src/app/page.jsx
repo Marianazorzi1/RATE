@@ -95,7 +95,7 @@ export default function Home() {
     <div>
       <main>
         
-        <FilmesADM />
+        {/* <FilmesADM /> */}
         {/* <AtoresADM /> */}
         {/* <Generos/> */}
         {/* <GenerosADM/> */}
@@ -108,7 +108,7 @@ export default function Home() {
         {/* <Perfil/> */}
         {/* <PerfilComen /> */}
         {/* <PerfilAmg /> */}
-        {/* <Comentarios/> */}
+        <Comentarios/>
         {/* <AdcSugsAtor/> */}
         {/* <AdcAtor/> */}
         {/* <AdcGenero/> */}

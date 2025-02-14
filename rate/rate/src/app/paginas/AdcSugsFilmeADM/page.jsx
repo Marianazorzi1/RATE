@@ -1,34 +1,36 @@
 import React from 'react';
-import './adc_sugs_filmeADM.css'; 
+import styles from './adc_sugs_filmeADM.module.css'
 import FormField from '../../components/FormField';
 import Classificacao from '../../components/ClassificacaoIMG';
 
-const AdcSugsFilmADm = () => {
+const AdcSugsFilm = () => {
 
 //   const goBack = () => {
 //     window.history.back();
 //   };
 
   return (
-    <div className="cards">
-      <div className="botoes">
-        <div className="seta_voltar">
-          <button className="back-button">&#8592;</button>
+    <div className={styles.cards}>
+      <div className={styles.botoes}>
+        <div className={styles.seta_voltar}>
+          <button className={styles.back_button}>&#8592;</button>
         </div>
       </div>
-      <div className="container">
-        <h2>MODIFICAR SUGESTÃO</h2>
-        <div className="form-container">
-          <img src="img/marvel.jpeg" alt="Ator" className="ator-image" />
+      
+      <div className={styles.container}>
+      
+        <div className={styles.form_container}>
+        <h2 className={styles.h2}>MODIFICAR SUGESTÃO</h2>
+          <img src="img/marvel.jpeg" alt="Ator" className={styles.ator_image} />
           <FormField/>
-          <form id="atorForm">
+          <form className={styles.atorForm}>
            
             <Classificacao/>
-            <div className="button-group">
+            <div className={styles.button_group}>
               <a href="vizu_mi_sugs.html">
-                <button type="button" id="cancelaa">Cancelar</button>
+                <button type="button" className={styles.cancela}>Cancelar</button>
               </a>
-              <button type="submit" id="addi">Modificar</button>
+              <button type="submit" className={styles.addd}>Modificar</button>
             </div>
           </form>
         </div>
@@ -37,4 +39,4 @@ const AdcSugsFilmADm = () => {
   );
 };
 
-export default AdcSugsFilmADm;
+export default AdcSugsFilm;

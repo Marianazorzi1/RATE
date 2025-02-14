@@ -1,42 +1,38 @@
 import React from "react";
-import "../../paginas/AtoresADM/atores_ADM.css"; 
-import Header from "../../components/header/Header";
+import styles from "./atores_ADM.module.css"
 import LateralBar from "../../components/LateralBar";
+import Header from "@/app/components/header/Header.jsx";
 
-const AtoresADM = () => {
+const Atores = () => {
   return (
-    <>
-      <Header/>
+    <div className={styles.body}>
+      <Header />
 
       <main>
-        <section className="blocos_atores">
-          <div className="card_adc">
-            <a href="add_ator.html">
-              <button id="btn_adc">ADICIONAR +</button>
+        <section className={styles.blocos_ato}>
+          <div className={styles.info_ato}>
+            <div className={styles.atores}>
+            <a href="add_filme.html">
+              <button id={styles.btn_adc}>ADICIONAR +</button>
             </a>
-          </div>
-          <div className="info_ator">
-            <div className="atores">
               <h1>Atores: </h1>
             </div>
-            <div className="card_blocos">
+            <div className={styles.card_blocos}>
               {Array(21)
                 .fill(null)
                 .map((_, index) => (
-                  <a key={index} href="class_ator_ADM.html">
-                    <div className="blocos"></div>
+                  <a key={index} href={`atores_${index}.html`}>
+                    <div className={styles.blocos}></div>
                   </a>
                 ))}
             </div>
           </div>
         </section>
 
-        <LateralBar/>
-
-        
+        <LateralBar />
       </main>
-    </>
+    </div>
   );
 };
 
-export default AtoresADM;
+export default Atores;

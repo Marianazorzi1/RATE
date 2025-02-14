@@ -1,4 +1,5 @@
-import Header from "../../components/header/Header";
+import React from "react";
+import Header from "@/app/components/header/Header.jsx";
 import "./vizu_sugs_ADM.css"; 
 import LateralBar from "../../components/LateralBar";
 

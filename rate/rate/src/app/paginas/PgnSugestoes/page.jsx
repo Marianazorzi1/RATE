@@ -1,4 +1,5 @@
-import Header from "../../components/header/Header";
+import React from "react";
+import Header from "@/app/components/header/Header.jsx";
 import "./sugestoes.css"; 
 import LateralBar from "../../components/LateralBar";
 

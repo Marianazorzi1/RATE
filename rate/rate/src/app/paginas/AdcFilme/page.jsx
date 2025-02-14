@@ -13,18 +13,20 @@ const AdcFilm = () => {
     <div className={styles.cards}>
       <div className={styles.botoes}>
         <div className={styles.seta_voltar}>
-          <button className={styles.back-button}>&#8592;</button>
+          <button className={styles.back_button}>&#8592;</button>
         </div>
       </div>
+      
       <div className={styles.container}>
-        <h2>MODIFICAR SUGESTÃO</h2>
-        <div className={styles.form-container}>
-          <img src="img/marvel.jpeg" alt="Ator" className={styles.ator-image} />
+      
+        <div className={styles.form_container}>
+        <h2 className={styles.h2}>MODIFICAR SUGESTÃO</h2>
+          <img src="img/marvel.jpeg" alt="Ator" className={styles.ator_image} />
           <FormField/>
           <form className={styles.atorForm}>
            
             <Classificacao/>
-            <div className={styles.button-group}>
+            <div className={styles.button_group}>
               <a href="vizu_mi_sugs.html">
                 <button type="button" className={styles.cancela}>Cancelar</button>
               </a>

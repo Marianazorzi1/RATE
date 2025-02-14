@@ -1,59 +1,57 @@
 import React from "react";
-import Header from "@/app/components/Header";
-import './cometarios.css';
+import Header from "@/app/components/header/Header.jsx";
+import styles from './cometarios.module.css';
 import LateralBar from "@/app/components/LateralBar";
 
 const Comentarios = () => {
   return (
-    <div>
-      <Header/>
+    <div className={styles.body}>
+      <Header />
 
       <main>
-        <section className="blocos_filmes">
-          <div className="card_buttons">
-            <button id="btn_modificar">Modificar</button>
-            <button id="btn_remover">Remover</button>
+        <section className={styles.blocos_filmes}>
+          <div className={styles.card_buttons}>
+            <button id="btn_modificar" className={styles.btn_modificar}>Modificar</button>
+            <button id="btn_remover" className={styles.btn_remover}>Remover</button>
           </div>
-          <div className="info_comen">
-            <div className="comen_pes">
+          <div className={styles.info_comen}>
+            <div className={styles.comen_pes}>
               <h1>Comentários pessoais: </h1>
             </div>
-            <div className="card_blocos">
+            <div className={styles.card_blocos}>
               {[...Array(8)].map((_, index) => (
-                <div className="bloco" key={index}>
-                  <div className="img_comen">
+                <div className={styles.bloco} key={index}>
+                  <div className={styles.img_comen}>
                     <a href="perfil_comen.html">
-                      <img className="perfil" src="img/Perfil.png" alt="Perfil" />
+                      <img className={styles.perfil} src="img/Perfil.png" alt="Perfil" />
                     </a>
                   </div>
-                  <div className="blocos_int">
+                  <div className={styles.blocos_int}>
                     <p>Comentário bem útil</p>
                   </div>
                 </div>
               ))}
             </div>
-            <div className="comen_amigos">
+            <div className={styles.comen_amigos}>
               <h1>Comentários de amizades: </h1>
             </div>
-            <div className="card_blocos">
+            <div className={styles.card_blocos}>
               {[...Array(8)].map((_, index) => (
-                <div className="bloco" key={index}>
-                  <div className="img_comen">
+                <div className={styles.bloco} key={index}>
+                  <div className={styles.img_comen}>
                     <a href="perfil_comen.html">
-                      <img className="perfil" src="img/Perfil.png" alt="Perfil" />
+                      <img className={styles.perfil} src="img/Perfil.png" alt="Perfil" />
                     </a>
                   </div>
-                  <div className="blocos_int">
+                  <div className={styles.blocos_int}>
                     <p>Comentário bem útil</p>
                   </div>
                 </div>
               ))}
             </div>
-            
           </div>
-          
         </section>
-        <LateralBar/>
+        <LateralBar />
       </main>
     </div>
   );

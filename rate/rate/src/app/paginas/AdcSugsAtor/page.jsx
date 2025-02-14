@@ -1,30 +1,30 @@
 import React from 'react';
-import './adcSugsAtor.css'; 
+import styles from './adcSugsAtor.module.css'
 import FormMenor from '../../components/FormMenor';
 
-const AdcSugsAtor = () => {
+const AdcAtor = () => {
 
 //   const goBack = () => {
 //     window.history.back();
 //   };
 
   return (
-    <div className="cards">
-      <div className="seta_voltar">
-        <button className="back-button" >&#8592;</button>
+    <div className={styles.cards}>
+      <div className={styles.seta_voltar}>
+        <button className={styles.back_button} >&#8592;</button>
       </div>
-      <div className="container">
-        <h2>SUGERIR ATOR</h2>
-        <div className="form-container">
-          <img src="img/ator.webp" alt="Ator" className="ator-image" />
+      <div className={styles.container}>
+        <h2 className={styles.h2}>ADICIONAR ATOR</h2>
+        <div className={styles.form_container}>
+          <img src="img/ator.webp" alt="Ator" className={styles.ator_image} />
           <FormMenor/>
-          <form id="atorForm">
+          <form className={styles.atorForm}>
             
-            <div className="button-group">
+            <div className={styles.button_group}>
               <a href="vizu_mi_sugs.html">
-                <button type="button" id="cance">Cancelar</button>
+                <button type="button" className={styles.cance}>Cancelar</button>
               </a>
-              <button type="submit" id="add">Adicionar</button>
+              <button type="submit" className={styles.add}>Adicionar</button>
             </div>
           </form>
         </div>
@@ -33,4 +33,4 @@ const AdcSugsAtor = () => {
   );
 };
 
-export default AdcSugsAtor;
+export default AdcAtor;

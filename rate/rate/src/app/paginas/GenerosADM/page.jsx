@@ -1,6 +1,6 @@
 import React from "react";
 import "../../paginas/GenerosADM/generos_ADM.css";
-import Header from "../../components/header/Header";
+import Header from "@/app/components/header/Header.jsx";
 import LateralBar from "../../components/LateralBar";
 
 
@@ -18,7 +18,7 @@ const GenerosADM = () => {
             </a>
           </div>
           <div className="info_gen">
-            <div className="genenos">
+            <div className="generos">
               <h1>Gêneros:</h1>
             </div>
             <div className="card_blocos">

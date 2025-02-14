@@ -1,45 +1,42 @@
 import React from "react";
-import Header from "@/app/components/Header";
-import './amigos.css';
+import styles from "./amigos.module.css"; // Importação correta do CSS Module
+import Header from "@/app/components/header/Header.jsx";
 import LateralBar from "@/app/components/LateralBar";
 
 const Comentarios = () => {
   return (
-    <div>
-      <Header/>
+    <div className={styles.body}>
+      <Header />
 
       <main>
-        <section className="blocos_amgs">
-          
-          <div className="info_comen">
-            <div className="comen_pes">
+        <section className={styles.blocos_amgs}>
+          <div className={styles.info_comen}>
+            <div className={styles.comen_pes}>
               <h1>Amigos: </h1>
             </div>
-            <div className="card_blo">
+            <div className={styles.card_blo}>
               {[...Array(12)].map((_, index) => (
-                <div className="bloco" key={index}>
-                  <div className="img_come">
+                <div className={styles.bloco} key={index}>
+                  <div className={styles.img_come}>
                     <a href="perfil_comen.html">
-                      <img className="perfi" src="img/Perfil.png" alt="Perfil" />
+                      <img className={styles.perfi} src="img/Perfil.png" alt="Perfil" />
                     </a>
                   </div>
-                  <div className="blocos_in">
-                    <p className="just">@JustinBieber</p>
-                    <div className="div_button">
-                    <a href="perfil_amg.html">
-                      <button className="vizu_amg">Visualizar perfil</button>
-                    </a>
-                    <button className="rem_amg">Remover amigo</button>
-                  </div>
+                  <div className={styles.blocos_in}>
+                    <p className={styles.just}>@JustinBieber</p>
+                    <div className={styles.div_button}>
+                      <a href="perfil_amg.html">
+                        <button className={styles.vizu_amg}>Visualizar perfil</button>
+                      </a>
+                      <button className={styles.rem_amg}>Remover amigo</button>
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
-            
           </div>
-          
         </section>
-        <LateralBar/>
+        <LateralBar />
       </main>
     </div>
   );

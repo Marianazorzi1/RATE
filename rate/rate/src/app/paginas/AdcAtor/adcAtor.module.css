@@ -7,7 +7,7 @@
 }
 
 
-.back-button {
+.back_button {
     background-color: transparent;
     border: none;
     color: #fff;
@@ -24,13 +24,11 @@
 
 .container {
     height: max-content;
-    width: 35% ;
+    width: 100%;
     background-color: #3f3e3e;
     padding: 20px;
     border-radius: 15px;
-    margin-bottom: 40px;
-    margin-left: 32.5%;
-    margin-right: 32.5%;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,17 +38,18 @@
     font-weight: bold;
 }
 
+
 .h2 {
     margin-bottom: 20px;
     letter-spacing: 1.5px;
 }
 
-.form-container {
+.form_container {
     height: 90%;
     width: 90%;
 }
 
-.ator-image {
+.ator_image {
     width: 90%;
     height: 90%;
     max-width: 250px;
@@ -64,13 +63,13 @@
     width: 100%;
 }
 
-label {
+#label {
     display: block;
     margin: 10px 0 5px;
     text-align: left;
 }
 
-input {
+.input {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -81,18 +80,14 @@ input {
 }
 
 
-button {
-    /* padding: 10px 20px; */
+/* button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
     background-color: #52057B;
     color: white;
-}
+} */
 
-button.cance {
-    background-color: #52057B;
-}
 
 .img_classificacao{
     width: 90%;
@@ -179,8 +174,9 @@ button.cance {
 }
 
 .cance{
-    padding: 3.5%;
+    padding: 10.5%;
     font-size: 85%;
+    margin: 2%;
     background-color: #52057B;
     
 }
@@ -193,7 +189,7 @@ button.cance {
     background-color: #7e198f;
 }
 
-.button-group {
+.button_group {
     display: flex;
     justify-content: center;
     align-items: center;

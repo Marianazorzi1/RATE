@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@253&family=Nerko+One&family=Protest+Guerrilla&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-body {
+
+.body {
     background-color: #474747;
 }
 
@@ -240,11 +236,7 @@ body {
     padding: 10px;
 }
 
-p {
-    color: #FFF;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-}
+
 
 .card_buttons {
     width: 100%;
@@ -253,7 +245,7 @@ p {
     margin-right: 4%;                                                                                                                                                                                                                                                                     
 }
 
-#btn_modificar {
+.btn_modificar {
     background-color: #737373;
     width: 90px;
     padding: 12px;
@@ -267,13 +259,13 @@ p {
     cursor: pointer;
 }
 
-#btn_modificar:hover {
+.btn_modificar:hover {
     background-color: #959595;
 }
 
-#btn_remover {
+.btn_remover {
     background-color: #B60B0D;
-    width: 85px;
+    width: 90px;
     padding: 12px;
     border-radius: 15px ;
     color: rgb(253, 253, 253);
@@ -286,7 +278,7 @@ p {
     margin-left: 3%;
 }
 
-#btn_remover:hover {
+.btn_remover:hover {
     background-color: #df1013;
 }
 

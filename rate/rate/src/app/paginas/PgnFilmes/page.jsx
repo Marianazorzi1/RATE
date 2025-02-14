@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../paginas/PgnFilmes/filmes.css';
-import Header from '../../components/header/Header';
+import Header from '@/app/components/header/Header.jsx';
 import LateralBar from '../../components/LateralBar';
 
 const Filmes = () => {

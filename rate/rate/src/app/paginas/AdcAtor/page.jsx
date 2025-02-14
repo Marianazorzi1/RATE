@@ -11,16 +11,16 @@ const AdcAtor = () => {
   return (
     <div className={styles.cards}>
       <div className={styles.seta_voltar}>
-        <button className={styles.back-button} >&#8592;</button>
+        <button className={styles.back_button} >&#8592;</button>
       </div>
       <div className={styles.container}>
         <h2 className={styles.h2}>ADICIONAR ATOR</h2>
-        <div className={styles.form-container}>
-          <img src="img/ator.webp" alt="Ator" className={styles.ator-image} />
+        <div className={styles.form_container}>
+          <img src="img/ator.webp" alt="Ator" className={styles.ator_image} />
           <FormMenor/>
           <form className={styles.atorForm}>
             
-            <div className={styles.button-group}>
+            <div className={styles.button_group}>
               <a href="vizu_mi_sugs.html">
                 <button type="button" className={styles.cance}>Cancelar</button>
               </a>

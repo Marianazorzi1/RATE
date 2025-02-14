@@ -1,6 +1,6 @@
 import React from "react";
 import "./vizu_sugs_ADM.css";
-import Header from "@/app/components/Header";
+import Header from "@/app/components/header/Header.jsx";
 import LateralBar from "@/app/components/LateralBar";
 
 const VizuSugsADM = () => {

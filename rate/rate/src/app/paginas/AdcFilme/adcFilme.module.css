@@ -6,7 +6,7 @@
     justify-content: flex-start;
 }
 
-.back-button {
+.back_button {
     background-color: transparent;
     border: none;
     color: #fff;
@@ -23,14 +23,14 @@
 
 
 
-:root .container {
+.container {
     
     background-color: #2C2C2C;
     display: flex;
+    margin-top: 15%;
     justify-content: center; 
     align-items: center;     
     height: 100vh;           
-    margin: 0;
     background-color: #3f3e3e;
     padding: 20px;
     border-radius: 15px;
@@ -44,17 +44,17 @@
   
   }
   
-h2 {
+.h2 {
     margin-bottom: 20px;
     letter-spacing: 1.5px;
 }
 
-.form-container {
+.form_container {
     height: 90%;
     width: 90% ;
 }
 
-.ator-image {
+.ator_image {
     width: 90%;
     height: 90%;
     max-width: 250px;
@@ -64,17 +64,17 @@ h2 {
     border-radius: 10px;
 }
 
-form {
+#form {
     width: 100%;
 }
 
-label {
+#label {
     display: block;
     margin: 10px 0 5px;
     text-align: left;
 }
 
-input {
+#input {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -84,15 +84,15 @@ input {
     color: white;
 }
 
-button {
+/* button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
     background-color: #52057B;
     color: white;
-}
+} */
 
-button.cancela {
+.cancela {
     background-color: #52057B;
 }
 
@@ -149,7 +149,7 @@ button.cancela {
     background-color: #7e198f;
 }
 
-.button-group {
+.button_group {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,10 +158,10 @@ button.cancela {
     margin: 5%;
 }
 
-.form-container input[type="text"] {
+.form_container input[type="text"] {
     outline: 0;
 }
 
-.form-container input[type="date"] {
+.form_container input[type="date"] {
     outline: 0;
 }
