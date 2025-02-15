@@ -1,37 +1,37 @@
 import React from "react";
-import "./favoritos.css";
+import styles from "./favoritos.module.css";  // Importa o arquivo de CSS Module
 import Header from "@/app/components/header/Header.jsx";
 import LateralBar from "../../components/LateralBar";
 
 const Favoritos = () => {
   return (
-    <>
-      <Header/>
+    <div className={styles.body}> 
+      <Header />
 
       <main>
-        <section className="blocos_filmes">
-          <div className="card_remover">
-            <button id="btn_remover">Remover</button>
+        <section className={styles.blocos_filmes}> 
+          <div className={styles.card_remover}> 
+            <button className={styles.btn_remover}>Remover</button>
           </div>
-          <div className="info_fav">
-            <div className="favs">
+          <div className={styles.info_fav}> 
+            <div className={styles.favs}> 
               <h1>Favoritos:</h1>
             </div>
-            <div className="card_blocos">
+            <div className={styles.card_blocos}> 
               {Array(21)
                 .fill(null)
                 .map((_, index) => (
                   <a key={index} href={index % 2 === 0 ? "class_ator.html" : "class_filmes.html"}>
-                    <div className="blocos"></div>
+                    <div className={styles.blocos}></div> 
                   </a>
                 ))}
             </div>
           </div>
         </section>
 
-        <LateralBar/>
+        <LateralBar />
       </main>
-    </>
+    </div>
   );
 };
 

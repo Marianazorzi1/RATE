@@ -101,14 +101,14 @@ export default function Home() {
         {/* <GenerosADM/> */}
         {/* <Favoritos/> */}
         {/* <Atores/> */}
-        {/* <PaginaInicialLogin/> */}
+        <PaginaInicialLogin/>
         {/* <SugsFilm/> */}
         {/* <ModsSugsFilm/> */}
         {/* <ModsSugsAtor/> */}
         {/* <Perfil/> */}
         {/* <PerfilComen /> */}
         {/* <PerfilAmg /> */}
-        <Comentarios/>
+        {/* <Comentarios/> */}
         {/* <AdcSugsAtor/> */}
         {/* <AdcAtor/> */}
         {/* <AdcGenero/> */}

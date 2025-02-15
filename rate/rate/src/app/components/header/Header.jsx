@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <div className={styles.cinzacl}></div>
         <div className={styles.cinzaes}>
-          <i className={styles.search} id={styles.lupa}></i>
+          <i className={styles.lupa}></i>
         </div>
         <div className={styles.preto}>
           <div className={styles.botoes_perfil}>

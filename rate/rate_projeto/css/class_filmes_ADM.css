@@ -116,7 +116,7 @@ body {
     justify-content: center;
 }
 
-#lupa{
+.lupa{
     width: 80%;
     margin-left: 6%;
     margin-right: 14%;
@@ -461,7 +461,7 @@ body {
     }.movie {
         font-size: 10px;
     }
-    #lupa {
+    .lupa {
         font-size: 26px;
     }
     .botoes_perfil img {
@@ -482,7 +482,7 @@ body {
     .movie {
         font-size: 10px;
     }
-    #lupa {
+    .lupa {
         font-size: 22px;
     }
     .botoes_perfil img {
@@ -503,7 +503,7 @@ body {
     .movie {
         font-size: 9px;
     }
-    #lupa {
+    .lupa {
         font-size: 22px;
     }
     .botoes_perfil img {
@@ -524,7 +524,7 @@ body {
     .movie {
         font-size: 8px;
     }
-    #lupa {
+    .lupa {
         font-size: 20px;
     }
     .botoes_perfil img {
@@ -547,7 +547,7 @@ body {
     .movie {
         font-size: 8px;
     }
-    #lupa {
+    .lupa {
         font-size: 20px;
     }
     .botoes_perfil img {
