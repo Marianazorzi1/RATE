@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from "react";
-import "./perfil.css";
+import styles from './perfil.module.css'
 
 const Perfil = () => {
   const [name, setName] = useState('');
@@ -87,34 +87,34 @@ const Perfil = () => {
 
     `}
   </style>
-      <div className="top-icons">
-        <button onClick={handleDeleteAccount} className="top-icones">
-          <img src="img/🦆 icon _Trash_.png" alt="Trash Icon" className="volta" />
+      <div className={styles.top-icons}>
+        <button onClick={handleDeleteAccount} className={styles.top-icones}>
+          <img src="img/🦆 icon _Trash_.png" alt="Trash Icon" className={styles.volta} />
         </button>
-        <button onClick={handleExitAccount} className="top-icones">
-          <img src="img/🦆 icon _door leave_.png" alt="Exit Icon" className="lixo" />
+        <button onClick={handleExitAccount} className={styles.top-icones}>
+          <img src="img/🦆 icon _door leave_.png" alt="Exit Icon" className={styles.lixo} />
         </button>
       </div>
 
-      <div className="containe">
-        <div className="content">
-          <div className="left-container">
-            <div className="profile-picture">
+      <div className={styles.containe}>
+        <div className={styles.content}>
+          <div className={styles.left-container}>
+            <div className={styles.profile-picture}>
               <img src="img/Group-44.png" alt="User Icon" id="edicao" />
             </div>
           </div>
 
-          <div className="right-container">
+          <div className={styles.right-container}>
             <form id="profile-form" onSubmit={handleSave}>
-              <div className="info-container">
-                <div className="info">
-                  <label htmlFor="name" className="info-text">Nome (apelido):</label>
-                  <div className="input-wrapper">
+              <div className={styles.info-container}>
+                <div className={styles.info}>
+                  <label htmlFor="name" className={styles.info-text}>Nome (apelido):</label>
+                  <div className={styles.input-wrapper}>
                     <input
                       type="text"
                       id="name"
                       name="name"
-                      className="input-text"
+                      className={styles.input-text}
                       placeholder="Digite seu nome"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
@@ -122,26 +122,26 @@ const Perfil = () => {
                   </div>
                 </div>
 
-                <div className="info">
-                  <label htmlFor="email" className="Bio">Email:</label>
+                <div className={styles.info}>
+                  <label htmlFor="email" className={styles.Bio}>Email:</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
-                    className="input-text"
+                    className={styles.input-text}
                     placeholder="exemplo@email.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
 
-                <div className="info">
-                  <label htmlFor="bio" className="Bio">Bio:</label>
+                <div className={styles.info}>
+                  <label htmlFor="bio" className={styles.Bio}>Bio:</label>
                   <input
                     type="text"
                     id="bio"
                     name="bio"
-                    className="input-text"
+                    className={styles.input-text}
                     placeholder="Uma breve bio aqui"
                     value={bio}
                     onChange={(e) => setBio(e.target.value)}
@@ -149,34 +149,34 @@ const Perfil = () => {
                 </div>
               </div>
 
-              <button type="submit" className="conta-botao">Salvar</button>
+              <button type="submit" className={styles.conta-botao}>Salvar</button>
             </form>
           </div>
         </div>
       </div>
 
       {showCard && (
-        <div className="card-cinza">
-          <p className="texto">Suas mudanças foram <br/> salvas com sucesso</p>
+        <div className={styles.card-cinza}>
+          <p className={styles.texto}>Suas mudanças foram <br/> salvas com sucesso</p>
         </div>
       )}
 
       {showDeleteConfirm && (
-        <div className="confirm-box">
+        <div className={styles.confirm-box}>
           <p>Tem certeza que deseja excluir sua conta?</p>
-          <div className="buttons-container">
-            <button onClick={handleConfirmDelete} className="confirm-button">Sim</button>
-            <button onClick={handleCancelDelete} className="cancel-button">Não</button>
+          <div className={styles.buttons-container}>
+            <button onClick={handleConfirmDelete} className={styles.confirm-button}>Sim</button>
+            <button onClick={handleCancelDelete} className={styles.cancel-button}>Não</button>
           </div>
         </div>
       )}
 
       {showExitConfirm && (
-        <div className="confirm-box">
+        <div className={styles.confirm-box}>
           <p>Tem certeza que deseja sair da sua conta?</p>
-          <div className="buttons-container">
-            <button onClick={handleConfirmExit} className="confirm-button">Sim</button>
-            <button onClick={handleCancelExit} className="cancel-button">Não</button>
+          <div className={styles.buttons-container}>
+            <button onClick={handleConfirmExit} className={styles.confirm-button}>Sim</button>
+            <button onClick={handleCancelExit} className={styles.cancel-button}>Não</button>
           </div>
         </div>
       )}
