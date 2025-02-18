@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../paginas/PgnInicial/inicial.css';
+import styles from './inicial.module.css'
 import Header from '@/app/components/header/Header.jsx';
 import LateralBar from '../../components/LateralBar';
 
@@ -9,31 +9,31 @@ const Inicial = () => {
       <Header />
 
       <main>
-        <section className="blocos_filmes">
+        <section className={styles.blocos_filmes}>
           {/* <div className="card_login">
             <a href="login.html">
               <button id="btn_login">Login</button>
             </a>
           </div> */}
-          <div className="info_inicio">
-            <div className="tit_film">
+          <div className={styles.info_inicio}>
+            <div className={styles.tit_film}>
               <h1>Filmes: </h1>
             </div>
-            <div className="card_blocos">
+            <div className={styles.card_blocos}>
               {[...Array(7)].map((_, index) => (
                 <a key={index} href={`genero_${index}.html`}>
-                  <div className="blocos"></div>
+                  <div className={styles.blocos}></div>
                 </a>
               ))}
 
             </div>
-            <div className="tit_ator">
+            <div className={styles.tit_ator}>
               <h1>Atores: </h1>
             </div>
-            <div className="card_blocos">
+            <div className={styles.card_blocos}>
               {[...Array(14)].map((_, index) => (
                 <a key={index} href={`genero_${index}.html`}>
-                  <div className="blocos"></div>
+                  <div className={styles.blocos}></div>
                 </a>
               ))}
 

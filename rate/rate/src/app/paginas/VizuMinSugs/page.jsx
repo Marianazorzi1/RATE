@@ -1,5 +1,5 @@
 import React from "react";
-import "./vizu_min_sug.css";
+import styles from './vizu_min_sug.module.css'
 import Header from "@/app/components/header/Header.jsx";
 import LateralBar from "@/app/components/LateralBar";
 
@@ -10,48 +10,48 @@ const VizuMinSugs = () => {
       <Header/>
 
       <main>
-        <section className="blocos_filmes">
-          <div className="seta_voltar">
-            <button className="bac-butto">&#8592;</button>
+        <section className={styles.blocos_filmes}>
+          <div className={styles.seta_voltar}>
+            <button className={styles.bac-butto}>&#8592;</button>
           </div>
-          <div className="movie-details">
-            <div className="part1">
-              <h1 className="movi-name">Nome do filme</h1>
-              <div className="movie-image">
-                <div className="postera-frame"></div>
+          <div className={styles.movie-details}>
+            <div className={styles.part1}>
+              <h1 className={styles.movi-name}>Nome do filme</h1>
+              <div className={styles.movie-image}>
+                <div className={styles.postera-frame}></div>
               </div>
             </div>
-            <div className="parte2">
-              <p className="nam">Nome:</p>
-              <p className="nam">Idade:</p>
-              <p className="nam">Nascimento:</p>
+            <div className={styles.parte2}>
+              <p className={styles.nam}>Nome:</p>
+              <p className={styles.nam}>Idade:</p>
+              <p className={styles.nam}>Nascimento:</p>
               
             </div>
-            <div className="parte3">
+            <div className={styles.parte3}>
               <a href="perfil_comen.html">
-                <div className="use-card">
-                  <div className="profile-icon">
-                    <img className="perfil" src="img/Perfil.png" alt="Ícone de usuário" />
+                <div className={styles.use-card}>
+                  <div className={styles.profile-icon}>
+                    <img className={styles.perfil} src="img/Perfil.png" alt="Ícone de usuário" />
                   </div>
-                  <span className="username">@fulanotany</span>
+                  <span className={styles.username}>@fulanotany</span>
                 </div>
               </a>
-              <div className="adc_remov_button">
+              <div className={styles.adc_remov_button}>
                         <a href="add_sugs_ator_ADM.html">
-                            <div className="adicionar"><button className="ad_button">Modificar</button></div>
+                            <div className={styles.adicionar}><button className={styles.ad_button}>Modificar</button></div>
                         </a>
                         <a href="sugestoes_ADM.html">
-                            <div className="remover"><button className="remove_butto">Remover</button></div>
+                            <div className={styles.remover}><button className={styles.remove_butto}>Remover</button></div>
                         </a>
                     </div>
-              <div className="avaliacao">
-                <button className="k">
+              <div className={styles.avaliacao}>
+                <button className={styles.k}>
                   {/* <span className="likes">0 </span> */}
-                  <i className="fas fa-thumbs-up"></i>
+                  <i className={styles.fasfa-thumbs-up}></i>
                 </button>
-                <button className="n">
+                <button className={styles.n}>
                   {/* <span className="likes">0 </span> */}
-                  <i className="fas fa-thumbs-down"></i>
+                  <i className={styles.fasfa-thumbs-down}></i>
                 </button>
               </div>
             </div>

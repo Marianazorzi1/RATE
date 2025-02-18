@@ -1,133 +1,41 @@
 'use client';
 
 import React, { useState } from "react";
-import "./redefSenha3.css";
+import styles from './redefSenha3.module.css'
 
 const RedefinirSenha3 = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
   return (
-    <div className="container">
-       <style>
-    {`
-     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@253&family=Nerko+One&family=Protest+Guerrilla&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #737373;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .rate-header {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: #52057B;
-  }
-  
-  .rate-header h1 {
-    font-size: 40px;
-    font-family: "Archivo Black", sans-serif;
-  }
-  
-  .rate-header h2 {
-    font-size: 15px;
-    font-weight: 600;
-    margin-left: 40px;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: #4f4f4f;
-    padding: 30px;
-    border-radius: 15px;
-  }
-  
-  .title {
-    color: white;
-    margin-bottom: 15px;
-    font-size: 30px;
-  }
-  
-  .label {
-    color: white;
-    display: block;
-    margin-bottom: 5px;
-    text-align: left;
-    font-size: 14px;
-  }
-  
-  .input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #585858;
-    margin-bottom: 15px;
-    font-weight: normal;
-    font-size: 14px;
-  }
-  
-  .button {
-    background-color: #52057B;
-    color: white;
-    padding: 10px;
-    border: none;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  .button:hover {
-    background-color: #690d9b;
-  }  
-
-    `}
-  </style>
-      <header className="rate-header">
+    <div className={styles.container}>
+      <header className={styles.rate-header}>
         <h1>RATE</h1>
         <h2>MOVIE REVIEW</h2>
       </header>
       <div>
-        <h2 className="title">REDEFINIR SENHA</h2>
-        <label className="label" htmlFor="password">
+        <h2 className={styles.title}>REDEFINIR SENHA</h2>
+        <label className={styles.label} htmlFor="password">
           Nova senha:
         </label>
         <input
           type="password"
-          id="password"
-          className="input"
+          id={styles.password}
+          className={styles.input}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <label className="label" htmlFor="confirmPassword">
+        <label className={styles.label} htmlFor="confirmPassword">
           Confirmar senha:
         </label>
         <input
           type="password"
-          id="confirmPassword"
-          className="input"
+          id={styles.confirmPassword}
+          className={styles.input}
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
-        <button className="button">Redefinir</button>
+        <button className={styles.button}>Redefinir</button>
       </div>
     </div>
   );

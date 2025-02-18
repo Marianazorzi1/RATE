@@ -1,5 +1,5 @@
 import React from 'react';
-import './sugs_filme.css';
+import styles from './sugs_filme.module.css';
 import FormField from '../../components/FormField';
 import Classificacao from '../../components/ClassificacaoIMG';
 
@@ -9,27 +9,27 @@ function App() {
     // };
 
     return (
-        <div className="cards">
-            <div className="botoes">
-                <div className="seta_voltar">
-                    <button className="back-button">&#8592;</button>
+        <div className={styles.cards}>
+            <div className={styles.botoes}>
+                <div className={styles.seta_voltar}>
+                    <button className={styles.back-button}>&#8592;</button>
                 </div>
             </div>
-            <div className="container">
+            <div className={styles.container}>
                 <h2>SUGERIR FILME</h2>
-                <div className="form-container">
-                    <img src="img/marvel.jpeg" alt="Ator" className="ator-image" />
+                <div className={styles.form-container}>
+                    <img src="img/marvel.jpeg" alt="Ator" className={styles.ator-image} />
                     <FormField/>
-                    <form id="atorForm">
+                    <form id={styles.atorForm}>
                         
 
                         <Classificacao/>
 
-                        <div className="button-group">
+                        <div className={styles.button-group}>
                             <a href="sugestoes.html">
-                                <button type="button" id="cance">Cancelar</button>
+                                <button type="button" id={styles.cance}>Cancelar</button>
                             </a>
-                            <button type="submit" id="ad">Sugerir</button>
+                            <button type="submit" id={styles.ad}>Sugerir</button>
                         </div>
                     </form>
                 </div>

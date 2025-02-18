@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from "react";
-import "../../paginas/PerfilAmg/perfil_amg.css";
+import styles from './perfil_amg.module.css'
 
 
 const PerfilAmg = () => {
@@ -47,38 +47,38 @@ const PerfilAmg = () => {
 
         `}
       </style>
-      <div className="top-icons">
-            <p className="rev">Remover</p>
-            <img src="/img/🦆 icon _person remove_.png" alt="Ícone de remover amigo" className="desamigo" id="removamigo" role="button"/>
+      <div className={styles.top-icons}>
+            <p className={styles.rev}>Remover</p>
+            <img src="/img/🦆 icon _person remove_.png" alt="Ícone de remover amigo" className={styles.desamigo} id={styles.removamigo} role="button"/>
 
       </div>
 
-      <div className="containe">
-        <div className="content">
-          <div className="left-container">
-          <div className="profile-picture">
-            <img src="img/Group-44.png" alt="User Icon" id="edicao" className="profile-picture" />
+      <div className={styles.containe}>
+        <div className={styles.content}>
+          <div className={styles.left-container}>
+          <div className={styles.profile-picture}>
+            <img src="img/Group-44.png" alt="User Icon" id={styles.edicao} className={styles.profile-picture}/>
           </div>
           </div>
 
-          <div className="right-container">
-            <form id="profile-form" onSubmit={handleSave}>
-              <div className="apelido">
-                <label className="info-text">Nome (apelido):</label>
+          <div className={styles.right-container}>
+            <form id={styles.profile-form} onSubmit={handleSave}>
+              <div className={styles.apelido}>
+                <label className={styles.info-text}>Nome (apelido):</label>
                 <input
                   type="text"
-                  className="input-text"
+                  className={styles.input-text}
                   placeholder="Digite seu nome"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
 
-              <div className="apelido">
-                <label className="Bio">Bio:</label>
+              <div className={styles.apelido}>
+                <label className={styles.Bio}>Bio:</label>
                 <input
                   type="text"
-                  className="input-text"
+                  className={styles.input-text}
                   placeholder="Uma breve bio aqui"
                   value={bio}
                   onChange={(e) => setBio(e.target.value)}
@@ -87,13 +87,13 @@ const PerfilAmg = () => {
 
               <div>
                 <a href="ver-comentarios.html">
-                  <button type="button" className="conta-botao">
+                  <button type="button" className={styles.conta-botao}>
                     Ver comentários
                   </button>
                 </a>
               </div>
 
-              <button type="submit" className="conta-botao">
+              <button type="submit" className={styles.conta-botao}>
                 Voltar
               </button>
             </form>

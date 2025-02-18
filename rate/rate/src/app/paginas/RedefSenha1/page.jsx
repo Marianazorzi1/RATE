@@ -1,125 +1,28 @@
 'use client';
 
 import React from "react";
-import "./redefSenha1.css";
+import styles from './redefSenha1.module.css'
 
 const RedefinirSenha1 = () => {
   return (
-    <div><style>
-    {`
-     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@253&family=Nerko+One&family=Protest+Guerrilla&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    background-color: #737373;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    position: relative;
-}
-
-.rate-header {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-align: left;
-    color: #52057B;
-    z-index: 1000;
-}
-
-.rate-header h1 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 400;
-    font-family: "Archivo Black", sans-serif;
-}
-
-.rate-header h2 {
-    margin: 0;
-    margin-left: 40px;
-    color: #52057B;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-div.container[class="container"] {
-    background-color: #474747;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    border-radius: 15px;
-    margin-top: 50%;
-    width: 100%;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-}
-
-.title {
-  color: white;
-  margin-bottom: 25px;
-  font-size: 200%;
-}
-
-.label {
-  color: white;
-  display: block;
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-.input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ccc;
-  margin-bottom: 15px;
-}
-
-.button {
-  background-color: #52057B;
-  color: white;
-  padding: 10px;
-  border: none;
-  width: 100%;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #690d9b;
-}
-  
-
-    `}
-  </style>
-      <header className="rate-header">
+    <div>
+      <header className={styles.rate-header}>
         <h1>RATE</h1>
         <h2>MOVIE REVIEW</h2>
       </header>
-    <div className="container">
+    <div className={styles.container}>
       <div>
-        <h2 className="title">REDEFINIR SENHA</h2>
-        <label className="label" htmlFor="email">
+        <h2 className={styles.title}>REDEFINIR SENHA</h2>
+        <label className={styles.label} htmlFor="email">
           E-mail:
         </label>
         <input
           type="email"
-          id="email"
-          className="input"
+          id={styles.email}
+          className={styles.input}
           placeholder="Digite seu e-mail"
         />
-        <button className="button">Enviar</button>
+        <button className={styles.button}>Enviar</button>
       </div>
     </div>
     </div>

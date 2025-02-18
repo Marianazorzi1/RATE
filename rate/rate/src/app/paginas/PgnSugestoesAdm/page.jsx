@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "@/app/components/header/Header.jsx";
-import "./vizu_sugs_ADM.css"; 
+import styles from './PgnSugestoes.module.css'
 import LateralBar from "../../components/LateralBar";
 
 
@@ -12,19 +12,19 @@ const SugestaoAdm = () => {
       <Header/>
 
       <main>
-        <section className="blocos_sugs">
+        <section className={styles.blocos_sugs}>
 
-          <div className="info_sug">
-            <div className="sugestoes">
+          <div className={styles.info_sug}>
+            <div className={styles.sugestoes}>
               <h1>Sugestões:</h1>
             </div>
 
-            <div className="card_blocos">
+            <div className={styles.card_blocos}>
               {Array.from({ length: 20 }).map((_, index) => (
                 <a key={index} href="sugs_filme.html">
-                  <div className="blocos">
-                    <h1 className="titulo">Os Vingadores</h1>
-                    <div className="bloco2"></div>
+                  <div className={styles.blocos}>
+                    <h1 className={styles.titulo}>Os Vingadores</h1>
+                    <div className={styles.bloco2}></div>
                   </div>
                 </a>
               ))}
