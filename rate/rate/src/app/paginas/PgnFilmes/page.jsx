@@ -25,6 +25,7 @@ const Filmes = () => {
                   <div className={styles.blocos}></div>
                 </a>
               ))}
+              
 
             </div>
             {/* <div className="tit_ator">
