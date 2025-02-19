@@ -1,13 +1,12 @@
-.cards {
-    margin-top: -5%;
+.cartoes {
+    margin-top: -37%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-
-.back_button {
+.botaoVoltar {
     background-color: transparent;
     border: none;
     color: #fff;
@@ -18,58 +17,54 @@
     left: 20px; 
 }
 
-.back-button:hover {
+.botaoVoltar:hover {
     color: #ccc;
 }
 
-.container {
-    height: max-content;
-    width: 100%;
+.conteiner {
     background-color: #3f3e3e;
     padding: 20px;
     border-radius: 15px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: max-content;
+    margin-bottom: 40px;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
 
-
-.h2 {
+.titulo {
     margin-bottom: 20px;
     letter-spacing: 1.5px;
 }
 
-.form_container {
-    height: 90%;
-    width: 90%;
+.formConteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.ator_image {
-    width: 90%;
-    height: 90%;
-    max-width: 250px;
-    max-height: 310px;
+.imagemAtor {
+    width: 150px;
+    height: 200px;
     object-fit: cover;
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
-.atorForm {
+.formAtor {
     width: 100%;
 }
 
-#label {
+.labelAtor {
     display: block;
     margin: 10px 0 5px;
     text-align: left;
 }
 
-.input {
+.inputAtor {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -79,117 +74,7 @@
     color: white;
 }
 
-
-/* button {
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #52057B;
-    color: white;
-} */
-
-
-.img_classificacao{
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.ícone1{
-    width: 90%;
-    height: 90%;
-    max-width: 30px;
-    max-height: 30px;
-    object-fit: cover;
-    border-radius: 10px;
-
-}
-
-.ícone2{
-    width: 90%;
-    height: 90%;
-    margin-left: 10px;
-    max-width: 30px;
-    max-height: 30px;
-    object-fit: cover;
-    border-radius: 10px;
-} 
-
-.ícone3{
-    width: 90%;
-    height: 90%;
-    margin-left: 10px;
-    max-width: 30px;
-    max-height: 30px;
-    object-fit: cover;
-    border-radius: 10px;
-} 
-
-.ícone4{
-    width: 90%;
-    height: 90%;
-    margin-left: 10px;
-    max-width: 30px;
-    max-height: 30px;
-    object-fit: cover;
-    border-radius: 10px;
-} 
-
-.ícone5{
-    width: 90%;
-    height: 90%;
-    margin-left: 10px;
-    max-width: 30px;
-    max-height: 30px;
-    object-fit: cover;
-    border-radius: 10px;
-} 
-
-.ícone6{
-    width: 90%;
-    height: 90%;
-    margin-left: 10px;
-    max-width: 30px;
-    max-height: 30px;
-    object-fit: cover;
-    border-radius: 10px;
-} 
-
-.buto{
-    background-color: #3f3e3e;
-}
-
-.add{
-    padding: 3%;
-    margin: 2%;
-    font-size: 85%;
-    background-color: #52057B;
-}
-
-.cance{
-    padding: 10.5%;
-    font-size: 85%;
-    margin: 2%;
-    background-color: #52057B;
-    
-}
-
-.cance:hover {
-    background-color: #7e198f;
-}
-
-.add:hover {
-    background-color: #7e198f;
-}
-
-.button_group {
+.grupoBotoes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,10 +83,36 @@
     margin: 5%;
 }
 
-.form-container input[type="text"] {
-    outline: 0;
+.botaoAdicionar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #52057B;
+    color: white;
 }
 
-.form-container input[type="date"] {
+.botaoAdicionar:hover {
+    background-color: #7e198f;
+}
+
+.botaoCancelar {
+    background-color: #52057B;
+}
+
+.botaoCancelar:hover {
+    background-color: #7e198f;
+}
+
+.imagemIcone {
+    height: 5%;
+    width: 2%;
+    margin-left: -95%;
+    margin-top: -44%;
+}
+
+.formConteiner input[type="text"],
+.formConteiner input[type="date"],
+.formConteiner input[type="number"] {
     outline: 0;
 }
