@@ -1,6 +1,9 @@
 'use client';
 import React, { useState } from "react";
-import styles from './perfil.module.css'
+import { useRouter } from "next/navigation";
+import styles from './perfil.module.css';
+import { Trash2, LogOut, ArrowLeft } from 'lucide-react';
+
 
 const Perfil = () => {
   const [name, setName] = useState('');
@@ -8,42 +11,57 @@ const Perfil = () => {
   const [bio, setBio] = useState('');
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
-  const [showCard, setShowCard] = useState(false); 
+  const [backHomePage, setBackHomePage] = useState(false);
+  const [showCard, setShowCard] = useState(false);
+  const router = useRouter();
 
+
+  // Função para exibir a confirmação de exclusão
   const handleDeleteAccount = () => {
     setShowDeleteConfirm(true);
+    setShowExitConfirm(false); 
   };
 
+ 
   const handleExitAccount = () => {
     setShowExitConfirm(true);
+    setShowDeleteConfirm(false); 
   };
+
 
   const handleConfirmDelete = () => {
     setName('');
     setEmail('');
     setBio('');
     setShowDeleteConfirm(false);
+    
   };
 
+ 
   const handleCancelDelete = () => {
     setShowDeleteConfirm(false);
   };
 
+
   const handleConfirmExit = () => {
     setShowExitConfirm(false);
+   
   };
+
 
   const handleCancelExit = () => {
     setShowExitConfirm(false);
   };
 
+ 
   const perfuncao = () => {
-    setShowCard(true); 
+    setShowCard(true);
     setTimeout(() => {
-      setShowCard(false); 
-    }, 5000);
+      setShowCard(false);
+    }, 3000);
   };
 
+ 
   const handleSave = (event) => {
     event.preventDefault();
 
@@ -67,54 +85,47 @@ const Perfil = () => {
     if (!isValid) {
       alert(errorMessage);
     } else {
-      perfuncao(); 
+      perfuncao();
     }
   };
 
   return (
-    <><style>
-    {`
-      body {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        background-color: #52057B; 
-        color: #D9D9D9; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-    `}
-  </style>
-      <div className={styles.top-icons}>
-        <button onClick={handleDeleteAccount} className={styles.top-icones}>
-          <img src="img/🦆 icon _Trash_.png" alt="Trash Icon" className={styles.volta} />
+    <div className={styles.body}>
+      <div className={styles.divVoltar}>
+        <a >
+          <button onClick={() => window.history.length > 1 ? router.back() : router.push('/')} className={styles.botaoVoltar}>
+            <ArrowLeft size={35} className={styles.setaVoltar} />
+          </button>
+        </a>
+      </div>
+      <div className={styles.top_icons}>
+        <button onClick={handleDeleteAccount} className={styles.top_icones}>
+          <Trash2 size={35} className={styles.lixo} />
         </button>
-        <button onClick={handleExitAccount} className={styles.top-icones}>
-          <img src="img/🦆 icon _door leave_.png" alt="Exit Icon" className={styles.lixo} />
+        <button onClick={handleExitAccount} className={styles.top_icones}>
+          <LogOut size={35} className={styles.volta} />
         </button>
       </div>
 
       <div className={styles.containe}>
         <div className={styles.content}>
-          <div className={styles.left-container}>
-            <div className={styles.profile-picture}>
-              <img src="img/Group-44.png" alt="User Icon" id="edicao" />
+          <div className={styles.left_container}>
+            <div className={styles.profile_picture}>
+              <img src="/img/Group-44.png" alt="User Icon" id="edicao" />
             </div>
           </div>
 
-          <div className={styles.right-container}>
+          <div className={styles.right_container}>
             <form id="profile-form" onSubmit={handleSave}>
-              <div className={styles.info-container}>
+              <div className={styles.info_container}>
                 <div className={styles.info}>
-                  <label htmlFor="name" className={styles.info-text}>Nome (apelido):</label>
-                  <div className={styles.input-wrapper}>
+                  <label htmlFor="name" className={styles.info_text}>Nome (apelido):</label>
+                  <div className={styles.input_wrapper}>
                     <input
                       type="text"
                       id="name"
                       name="name"
-                      className={styles.input-text}
+                      className={styles.input_text}
                       placeholder="Digite seu nome"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
@@ -128,7 +139,7 @@ const Perfil = () => {
                     type="email"
                     id="email"
                     name="email"
-                    className={styles.input-text}
+                    className={styles.input_text}
                     placeholder="exemplo@email.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -141,46 +152,49 @@ const Perfil = () => {
                     type="text"
                     id="bio"
                     name="bio"
-                    className={styles.input-text}
+                    className={styles.input_text}
                     placeholder="Uma breve bio aqui"
                     value={bio}
                     onChange={(e) => setBio(e.target.value)}
                   />
                 </div>
               </div>
-
-              <button type="submit" className={styles.conta-botao}>Salvar</button>
+              <div className={styles.divSalvar}>
+                <button type="submit" className={styles.conta_botao}>Salvar</button>
+              </div>
             </form>
           </div>
         </div>
       </div>
 
       {showCard && (
-        <div className={styles.card-cinza}>
-          <p className={styles.texto}>Suas mudanças foram <br/> salvas com sucesso</p>
+        <div className={styles.card_cinza}>
+          <p className={styles.texto}>Suas mudanças foram <br /> salvas com sucesso</p>
         </div>
       )}
 
       {showDeleteConfirm && (
-        <div className={styles.confirm-box}>
+        <div className={styles.confirm_box}>
           <p>Tem certeza que deseja excluir sua conta?</p>
-          <div className={styles.buttons-container}>
-            <button onClick={handleConfirmDelete} className={styles.confirm-button}>Sim</button>
-            <button onClick={handleCancelDelete} className={styles.cancel-button}>Não</button>
+          <div className={styles.buttons_container}>
+            <button onClick={handleConfirmDelete} className={styles.confirm_button}>Sim</button>
+            <button onClick={handleCancelDelete} className={styles.cancel_button}>Não</button>
           </div>
         </div>
       )}
 
       {showExitConfirm && (
-        <div className={styles.confirm-box}>
+        <div className={styles.confirm_box}>
           <p>Tem certeza que deseja sair da sua conta?</p>
-          <div className={styles.buttons-container}>
-            <button onClick={handleConfirmExit} className={styles.confirm-button}>Sim</button>
-            <button onClick={handleCancelExit} className={styles.cancel-button}>Não</button>
+          <div className={styles.buttons_container}>
+          <a href="/">
+            <button onClick={handleConfirmExit} className={styles.confirm_button}>Sim</button>
+            </a>
+            <button onClick={handleCancelExit} className={styles.cancel_button}>Não</button>
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

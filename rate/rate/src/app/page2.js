@@ -4,7 +4,7 @@ import GenerosADM from "./paginas/GenerosADM/page.jsx";
 import Generos from "./paginas/Generos/page.jsx";
 import Favoritos from "./paginas/Favoritos/page.jsx";
 import Atores from "./paginas/Atores/page.jsx";
-import PaginaInicialLogin from "./paginas/PagInicialLogin/page.jsx";
+import PaginaInicialLogin from "./paginas/PgnInicialLogin/page.jsx";
 import SugsFilm from "./paginas/SugsFilm/page.jsx";
 import ModsSugsFilm from "./paginas/ModSugsFilm/page.jsx";
 import ModsSugsAtor from "./paginas/ModSugsAtor/page.jsx";

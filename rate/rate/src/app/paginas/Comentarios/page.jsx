@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "@/app/components/header/Header.jsx";
 import styles from './cometarios.module.css';
-import LateralBar from "@/app/components/LateralBar";
+import LateralBar from "@/app/components/lateralbar/LateralBar";
 
 const Comentarios = () => {
   return (
@@ -22,8 +22,8 @@ const Comentarios = () => {
               {[...Array(8)].map((_, index) => (
                 <div className={styles.bloco} key={index}>
                   <div className={styles.img_comen}>
-                    <a href="perfil_comen.html">
-                      <img className={styles.perfil} src="img/Perfil.png" alt="Perfil" />
+                    <a href="/paginas/PerfilComen">
+                      <img className={styles.perfil} src="/img/Perfil.png" alt="Perfil" />
                     </a>
                   </div>
                   <div className={styles.blocos_int}>
@@ -39,8 +39,8 @@ const Comentarios = () => {
               {[...Array(8)].map((_, index) => (
                 <div className={styles.bloco} key={index}>
                   <div className={styles.img_comen}>
-                    <a href="perfil_comen.html">
-                      <img className={styles.perfil} src="img/Perfil.png" alt="Perfil" />
+                    <a href="/paginas/PerfilAmg">
+                      <img className={styles.perfil} src="/img/Perfil.png" alt="Perfil" />
                     </a>
                   </div>
                   <div className={styles.blocos_int}>

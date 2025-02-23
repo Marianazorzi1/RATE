@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./favoritos.module.css";  // Importa o arquivo de CSS Module
 import Header from "@/app/components/header/Header.jsx";
-import LateralBar from "../../components/LateralBar";
+import LateralBar from "../../components/lateralbar/LateralBar";
 
-const Favoritos = () => {
+const FavoritosADM = () => {
   return (
     <div className={styles.body}> 
       <Header />
@@ -15,13 +15,25 @@ const Favoritos = () => {
           </div>
           <div className={styles.info_fav}> 
             <div className={styles.favs}> 
-              <h1>Favoritos:</h1>
+              <h1 className={styles.h1}>Atores favoritos:</h1>
             </div>
             <div className={styles.card_blocos}> 
-              {Array(21)
+              {Array(9)
                 .fill(null)
                 .map((_, index) => (
-                  <a key={index} href={index % 2 === 0 ? "class_ator.html" : "class_filmes.html"}>
+                  <a key={index} href={"/paginas/ClassificacaoAtor"}>
+                    <div className={styles.blocos}></div> 
+                  </a>
+                ))}
+            </div>
+            <div className={styles.favsSe}> 
+              <h1 className={styles.h1}>Filmes favoritos:</h1>
+            </div>
+            <div className={styles.card_blocos}> 
+              {Array(9)
+                .fill(null)
+                .map((_, index) => (
+                  <a key={index} href={"/paginas/ClassFilm"}>
                     <div className={styles.blocos}></div> 
                   </a>
                 ))}
@@ -35,4 +47,4 @@ const Favoritos = () => {
   );
 };
 
-export default Favoritos;
+export default FavoritosADM;

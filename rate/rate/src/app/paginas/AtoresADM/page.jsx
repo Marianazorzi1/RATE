@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./atores_ADM.module.css"
-import LateralBar from "../../components/LateralBar";
+import LateralBar from '../../components/lateralBarAdm/index';
 import Header from "@/app/components/header/Header.jsx";
 
 const Atores = () => {
@@ -10,21 +10,21 @@ const Atores = () => {
 
       <main>
         <section className={styles.blocos_ato}>
-          <div className={styles.info_ato}>
-            <div className={styles.atores}>
-            <a href="add_filme.html">
+          <div className={styles.card_adc}> 
+            <a href="/paginas/AdcAtor">
               <button id={styles.btn_adc}>ADICIONAR +</button>
             </a>
-              <h1>Atores: </h1>
+          </div>
+          <div className={styles.info_ato}>
+            <div className={styles.atores}>
+              <h1 className={styles.h1}>Atores: </h1>
             </div>
             <div className={styles.card_blocos}>
-              {Array(21)
-                .fill(null)
-                .map((_, index) => (
-                  <a key={index} href={`atores_${index}.html`}>
-                    <div className={styles.blocos}></div>
-                  </a>
-                ))}
+              {[...Array(21)].map((_, index) => (
+                <a key={index} href={`/paginas/ClassificacaoAtorADM`}>
+                  <div className={styles.blocos}></div>
+                </a>
+              ))}
             </div>
           </div>
         </section>

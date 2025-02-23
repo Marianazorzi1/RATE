@@ -14,7 +14,7 @@ const CriarConta3 = () => {
       <div className={styles.criarConta3_container}>
         <h2>BEM VINDO AO RATE!</h2>
         <p className={styles.p}>Conta criada com sucesso!</p>
-        <a href="login.html" className={styles.button}>Fazer Login</a>
+        <a href="/paginas/Login" className={styles.button}>Fazer Login</a>
       </div>
     </div>
   );

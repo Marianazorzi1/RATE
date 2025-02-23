@@ -1,30 +1,52 @@
 import React from 'react';
-import styles from './add_ator.module.css'
-import FormMenor from '../../components/FormMenor';
+import styles from './ModSugsAtor.module.css';
+
+const InputField = ({ id, label, type = 'text', placeholder }) => (
+  <div className={styles.inputField}>
+    <label htmlFor={id} className={styles.labelInput}>{label}</label>
+    <input 
+      type={type} 
+      id={id} 
+      name={label} 
+      placeholder={placeholder} 
+      required 
+      className={styles.input}
+    />
+  </div>
+);
 
 const ModsugAtor = () => {
-
-//   const goBack = () => {
-//     window.history.back();
-//   };
-
   return (
     <div className={styles.cards}>
+      {/* Botão de Voltar */}
       <div className={styles.seta_voltar}>
-        <button className={styles.back_button} >&#8592;</button>
+      <a href="/paginas/PgnFilmes">
+        <button className={styles.back_button}>&#8592;</button>
+      </a>
       </div>
+
       <div className={styles.container}>
-        <h2 className={styles.h2}>ADICIONAR ATOR</h2>
+        <h2 className={styles.h2}>MODIFICAR SUGESTÃO</h2>
+        
         <div className={styles.form_container}>
-          <img src="img/ator.webp" alt="Ator" className={styles.ator_image} />
-          <FormMenor/>
+          {/* Imagem do Ator */}
+          <img src="/img/ator.webp" alt="Ator" className={styles.ator_image} />
+
+          {/* Assim como em modificar filmes, temos de fazer o mesmo */}
           <form className={styles.atorForm}>
+            <InputField id="nome" label="Nome: " placeholder="Digite o nome" />
+            <div className={styles.inputUnico}>
+              <InputField id="nascimento" label="Nascimento:" type="date" placeholder="Selecione a data de nascimento" />
+            </div>
             
+
             <div className={styles.button_group}>
-              <a href="vizu_mi_sugs.html">
+              <a href="/paginas/VisuMinSugs">
                 <button type="button" className={styles.cance}>Cancelar</button>
               </a>
-              <button type="submit" className={styles.add}>Adicionar</button>
+              <a href="/paginas/VisuMinSugs">
+              <button type="submit" className={styles.add}>Modificar</button>
+              </a>
             </div>
           </form>
         </div>

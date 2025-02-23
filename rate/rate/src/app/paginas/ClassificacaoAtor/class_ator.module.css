@@ -1,69 +1,48 @@
-/* Barra lateral */
-.lateral_bar {
-    position: fixed;
+.estrela_favorito{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 18.5vh;
+    left: 20vw;
+}
+
+.botaoVoltar {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    
+}
+
+.setaVoltar {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
     top: 0;
-    height: 100%;
-    width: 5%;
-    min-height: 40%;
-    background-color: #52057b;
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    top: 12vh;
+    left: 7vw;
 }
 
-.nav_botoes_lateral {
-    height: 80%;
-    width: 100%;
-    padding-top: 20%;
-    gap: 40%;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    flex-direction: column;
-}
-
-.botoes_acima {
-    height: 50%;
-    display: flex;
-    gap: 2%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.botoes {
-    justify-self: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    margin-top: 100%;
-    margin-bottom: -62%;
-}
-
-.ultimo_botao {
-    justify-self: center;
-    align-self: center;
-}
-
-
-/* Novo header */
-.header {
-    width: 100%;
-    height: 8vh;
-    min-height: 4vh;
+.botao_voltar_icon{
+    font-size: 34px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    margin-left: -3%;
+    margin-top: -2%;
     position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: #52057b;
 }
 
-/* Barra lateral dentro da página */
+
 .body {
     background-color: #474747;
-    margin-left: 5%; /* Adiciona margem à esquerda para a barra lateral */
+    width: 100%;
+    height: 100%;
 }
 
 /* Alterações no conteúdo */
@@ -78,7 +57,7 @@
     justify-content: flex-start;
     gap: 3vh;
     width: 100%;
-    margin-left: 5%; /* Para garantir que a área de conteúdo não sobreponha a barra lateral */
+    height: 100%;
 }
 
 /* Ajuste da largura do bloco do ator */
@@ -107,12 +86,47 @@
 }
 
 .imagem_ator {
-    width: 14vw;
-    height: 40vh;
+    width: 250px;
+    height: 350px;
     background-color: #5c5c5c;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
     margin-right: -400px;
+}
+
+.botoes {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    bottom: 0;
+}
+
+.remove_botao {
+    background-color: #B60B0D;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    color: white;
+}
+
+.remove_botao:hover {
+    background-color: #df1013;
+}
+
+.mod_button {
+    background-color: #737373;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    color: white;
+}
+
+.mod_button:hover {
+    background-color: #959595;
 }
 
 /* Atualizando a área de filmes */
@@ -132,6 +146,7 @@
     font-size: 20px;
     color: #FFF;
     font-family: "Montserrat", sans-serif;
+    font-weight: bold;
 }
 
 .area_filmes {
@@ -140,23 +155,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5vh;
+    gap: 4vh;
 }
 
 .bloco_filme {
     background-color: #737373;
-    height: 32vh;
+    height: 255px;
     width: 10vw;
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-}
-
-/* Ajustando para telas menores */
-@media only screen and (max-width: 767px) {
-    .rate {
-        font-size: 26px;
-    }
-    .botoes {
-        width: 24px;
-        height: 24px;
-    }
 }

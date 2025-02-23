@@ -1,28 +1,36 @@
 import React from "react";
 import styles from "./generos.module.css";  // Importa o arquivo de CSS Module
-import LateralBar from "../../components/LateralBar";
+import LateralBar from "../../components/lateralbar/LateralBar";
 import Header from "@/app/components/header/Header.jsx";
+
+const genres = [
+  "Ação", "Drama", "Para toda família", "Comédia", "Terror", "Ficção Científica", 
+  "Romance", "Animação", "Documentário", "Aventura", "Fantasia", "Musical", 
+  "Suspense", "Guerra", "Western", "Biografia", "Histórico", "Mistério"
+]; // Array de gêneros
 
 const Generos = () => {
   return (
-    <div className={styles.body}> {/* Usando o CSS module com styles */}
+    <div className={styles.body}>
       <Header />
 
       <main>
-        <section className={styles.blocos_gen}> {/* Aplicando a classe via styles */}
-          <div className={styles.info_gen}> {/* Aplicando a classe via styles */}
-            <div className={styles.generos}> {/* Aplicando a classe via styles */}
-              <h1>Gêneros: </h1>
-            </div>
-            <div className={styles.card_blocos}> {/* Aplicando a classe via styles */}
-              {Array(21)
-                .fill(null)
-                .map((_, index) => (
-                  <a key={index} href={`genero_${index}.html`}>
-                    <div className={styles.blocos}></div> {/* Aplicando a classe via styles */}
-                  </a>
-                ))}
-            </div>
+        <section className={styles.blocos_gen}>
+          <div className={styles.info_gen}>
+            {genres.map((genre, genreIndex) => (
+              <React.Fragment key={genreIndex}>
+                <div className={styles.generosSe}>
+                  <h1 className={styles.h1}>{genre}: </h1>
+                </div>
+                <div className={styles.card_blocos}>
+                  {[...Array(9)].map((_, index) => (
+                    <a key={index} href={`/paginas/ClassFilm`}>
+                      <div className={styles.blocos}></div>
+                    </a>
+                  ))}
+                </div>
+              </React.Fragment>
+            ))}
           </div>
         </section>
 

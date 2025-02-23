@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@253&family=Nerko+One&family=Protest+Guerrilla&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
+
+.body {
     font-family: 'Montserrat', Arial, sans-serif;
     background-color: #737373;
     display: flex;
@@ -17,39 +13,33 @@ body {
     position: relative;
 }
 
-.rate-header {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-align: left;
-    color: #52057B;
-    z-index: 1000;
+.rate_header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #52057B;
 }
 
-.rate-header h1 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 400;
-    font-family: "Archivo Black", sans-serif;
+.rate_header h1 {
+  font-size: 40px;
+  font-family: "Archivo Black", sans-serif;
 }
 
-.rate-header h2 {
-    margin: 0;
-    margin-left: 40px;
-    color: #52057B;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
+.rate_header h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 40px;
 }
-
-div.container[class="container"] {
+.container {
     background-color: #474747;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 40px;
+    gap: 2vh;
+    padding: 50px;
     border-radius: 15px;
-    margin-top: 50%;
-    width: 100%;
+    width: 25%;
+    height: max-content;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
@@ -57,8 +47,8 @@ div.container[class="container"] {
 
 .title {
   color: white;
-  margin-bottom: 25px;
-  font-size: 200%;
+  margin-bottom: 22px;
+  font-size: 22px;
 }
 
 .label {
@@ -75,6 +65,7 @@ div.container[class="container"] {
   border-radius: 5px;
   background-color: #ccc;
   margin-bottom: 15px;
+  outline: none;
 }
 
 .button {
@@ -82,9 +73,11 @@ div.container[class="container"] {
   color: white;
   padding: 10px;
   border: none;
-  width: 100%;
-  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+  border-radius: 25px;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .button:hover {

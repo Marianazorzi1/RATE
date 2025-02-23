@@ -1,10 +1,28 @@
-// components/Header.jsx
-import React from 'react';
+'use client'
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image'; 
 import styles from './Header.module.css'
-
+import { Search, X } from 'lucide-react';
 
 const Header = () => {
+  const [showSearch, setShowSearch] = useState(false);
+  const [showNotifications, setShowNotifications] = useState(false);
+  const searchRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (
+      searchRef.current && !searchRef.current.contains(event.target) &&
+      !event.target.closest(`.${styles.botaoPesq}`)
+    ) {
+      setShowSearch(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <header>
       <div className={styles.header}>
@@ -14,11 +32,25 @@ const Header = () => {
         </div>
         <div className={styles.cinzacl}></div>
         <div className={styles.cinzaes}>
-          <i className={styles.lupa}></i>
+          <button className={styles.botaoPesq} onClick={() => setShowSearch(!showSearch)}>
+            <Search size={24} className={styles.lupa} />
+          </button>
+          {showSearch && (
+            <div className={styles.searchCard} ref={searchRef}>
+              <input
+                type="text"
+                placeholder="Pesquisar..."
+                className={styles.searchInput}
+              />
+              <button className={styles.closeButton} onClick={() => setShowSearch(false)}>
+                <X size={18} />
+              </button>
+            </div>
+          )}
         </div>
         <div className={styles.preto}>
           <div className={styles.botoes_perfil}>
-            <button>
+            <button className={styles.botaoNotifi} onClick={() => setShowNotifications(!showNotifications)}>
               <Image
                 id={styles.sino}
                 src="/img/notificacao.png" 
@@ -27,8 +59,13 @@ const Header = () => {
                 height={24} 
               />
             </button>
-            <button>
-              <a href="amigos.html">
+            {showNotifications && (
+              <div className={styles.notificationCard}>
+                <p>Nenhuma notificação</p>
+              </div>
+            )}
+            <button className={styles.botaoAmigos}>
+              <a href="/paginas/Amigos">
                 <Image
                   id={styles.tres}
                   src="/img/amigos.png" 
@@ -38,8 +75,8 @@ const Header = () => {
                 />
               </a>
             </button>
-            <button>
-              <a href="perfil.html">
+            <button className={styles.botaoPerfil}>
+              <a href="/paginas/Perfil">
                 <Image
                   id={styles.perfil}
                   src="https://img.icons8.com/?size=100&id=85147&format=png&color=737373" 
@@ -56,4 +93,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;

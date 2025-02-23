@@ -5,6 +5,10 @@
     background-color: #474747;
 }
 
+.h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
 
 
 /* Barra lateral */
@@ -187,6 +191,13 @@
     font-size: 20px;
 }
 
+.generosSe {
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-top: 4vh;
+}
+
 .generos h1 {
     font-size: 20px;
 }
@@ -207,148 +218,4 @@
     height: 240px;
     width: 160px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-}
-
-/* Estilo do botão de menu */
-.menu-btn {
-    display: none;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #52057b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    z-index: 1000;
-    cursor: pointer;
-}
-
-.menu-btn i {
-    font-size: 20px;
-}
-
-/* Estilo do botão de menu */
-.menu-btn {
-    display: none;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #52057b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    z-index: 1000;
-    cursor: pointer;
-}
-
-.menu-btn i {
-    font-size: 20px;
-}
-
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-    .rate {
-        font-size: 26px;
-    }.movie {
-        font-size: 10px;
-    }
-    #lupa {
-        font-size: 26px;
-    }
-    .botoes_perfil img {
-        height: 37px;
-        width: 37px;
-    }
-    .botoes {
-        width: 24px;
-        height: 24px;
-    }
-}
-
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-    .rate{
-        font-size: 26px;
-    }
-    .movie {
-        font-size: 10px;
-    }
-    #lupa {
-        font-size: 22px;
-    }
-    .botoes_perfil img {
-        height: 34px;
-        width: 34px;
-    }
-    .botoes {
-        width: 24px;
-        height: 24px;
-    }
-}
-
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .rate {
-        font-size: 25px;
-    }
-    .movie {
-        font-size: 9px;
-    }
-    #lupa {
-        font-size: 22px;
-    }
-    .botoes_perfil img {
-        height: 31px;
-        width: 31px;
-    }
-    .botoes {
-        width: 18px;
-        height: 18px;
-    }
-}
-
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
-    .rate { 
-        font-size: 22px;
-    }
-    .movie {
-        font-size: 8px;
-    }
-    #lupa {
-        font-size: 20px;
-    }
-    .botoes_perfil img {
-        height: 29px;
-        width: 29px;
-    }
-    .botoes {
-        width: 25px;
-        height: 25px;
-    }
-}
-
-@media only screen and (max-width: 405px) {
-    .lateral_bar {
-        display: block;
-    }
-    .rate {
-        font-size: 22px;
-    }
-    .movie {
-        font-size: 8px;
-    }
-    #lupa {
-        font-size: 20px;
-    }
-    .botoes_perfil img {
-        height: 29px;
-        width: 29px;
-    }
-    .botoes {
-        width: 25px;
-        height: 25px;
-    }
 }

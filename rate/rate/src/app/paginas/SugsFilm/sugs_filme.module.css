@@ -1,10 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
+
+.body {
     font-family: Arial, sans-serif;
     background-color: #2C2C2C;
     color: white;
@@ -14,15 +10,34 @@ body {
 }
 
 .cards {
-    margin-top: -5%;
+    margin-top: 5%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
+.botaoVoltar {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    
+}
 
-.back-button {
+.setaVoltar {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 30px;
+    left: 45px;
+}
+
+.back_button {
     background-color: transparent;
     border: none;
     color: #fff;
@@ -33,7 +48,7 @@ body {
     left: 20px; 
 }
 
-.back-button:hover {
+.back_button:hover {
     color: #ccc;
 }
 
@@ -43,9 +58,7 @@ body {
     background-color: #3f3e3e;
     padding: 20px;
     border-radius: 15px;
-    margin-bottom: 40px;
-    margin-left: 32.5%;
-    margin-right: 32.5%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,18 +67,22 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
-
-h2 {
-    margin-bottom: 20px;
+.h2{
+    margin-bottom: 5%;
     letter-spacing: 1.5px;
 }
 
-.form-container {
+/* h2 {
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+} */
+
+.form_container {
     height: 90%;
     width: 90%;
 }
 
-.ator-image {
+.ator_image {
     width: 90%;
     height: 90%;
     max-width: 250px;
@@ -75,7 +92,7 @@ h2 {
     border-radius: 10px;
 }
 
-form {
+/* form {
     width: 100%;
 }
 
@@ -93,21 +110,44 @@ input {
     margin-bottom: 10px;
     background-color: #444;
     color: white;
-}
+} */
 
 
-button {
-    /* padding: 10px 20px; */
+/* button {
+    
     border: none;
     border-radius: 5px;
     cursor: pointer;
     background-color: #52057B;
     color: white;
-}
+} */
 
-button#cance {
+#cance {
     background-color: #52057B;
+    border: none;
+    border-radius: 10%;
+
 }
+.label {
+    margin: 10px 0 5px;
+    text-align: left;
+}
+.nomee label{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #888;
+    font-size: 12px;
+}
+.input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #444;
+    color: white;
+} 
 
 .img_classificacao{
     width: 90%;
@@ -121,6 +161,30 @@ button#cance {
     justify-content: center;
     align-items: center;
 }
+.contai {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    margin-top: 5%;
+}
+
+.but_livre {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.livre {
+    width: 35px; 
+    height: 30px;
+    object-fit: cover;
+    border-radius: 7px;
+
+}
+
 
 .ícone1{
     width: 90%;
@@ -187,18 +251,37 @@ button#cance {
 }
 
 #ad{
-    padding: 3%;
+    padding: 23%;
     margin: 2%;
+    margin-left: 15%;
     font-size: 85%;
     background-color: #52057B;
+    border: none;
+    border-radius: 10%;
+    color: #fff;
 }
 
 #cance{
-    
+    margin: 2%;
     padding: 19.5%;
     font-size: 85%;
     background-color: #52057B;
+    color: #fff;
     
+}
+
+.labelInput {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    justify-content: space-around;
 }
 
 #cance:hover {
@@ -209,7 +292,7 @@ button#cance {
     background-color: #7e198f;
 }
 
-.button-group {
+.button_group {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,10 +301,28 @@ button#cance {
     margin: 5%;
 }
 
-.form-container input[type="text"] {
+.form_container input[type="text"] {
     outline: 0;
 }
 
-.form-container input[type="date"] {
+.form_container input[type="date"] {
     outline: 0;
+}
+
+@media screen and (max-width: 640px) {
+    #form {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 50%
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 60%
+    }
 }

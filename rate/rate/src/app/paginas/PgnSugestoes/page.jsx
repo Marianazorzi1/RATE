@@ -1,32 +1,44 @@
 import React from "react";
 import Header from "@/app/components/header/Header.jsx";
 import styles from './sugestoes.module.css'
-import LateralBar from "../../components/LateralBar";
+import LateralBar from "@/app/components/lateralbar/LateralBar";
 
 
 const Sugestao = () => {
 
 
   return (
-    <div>
-      <Header/>
+    <div className={styles.body}>
+      <Header />
 
       <main>
         <section className={styles.blocos_sugs}>
           <div className={styles.card_sug}>
-            <a href="minhas_sugestoes.html">
-              <button id={styles.btn_mi_sugs}>Minhas sugestões</button>
+            <a href="/paginas/PgnMinhasSugestoes" className={styles.link_sem_sublinhado}>
+              <button className={styles.btn_mi_sugs}>Minhas sugestões</button>
             </a>
           </div>
 
           <div className={styles.info_sug}>
             <div className={styles.sugestoes}>
-              <h1>Sugestões:</h1>
+              <h1>Sugestões de filme:</h1>
             </div>
-
             <div className={styles.card_blocos}>
-              {Array.from({ length: 20 }).map((_, index) => (
-                <a key={index} href="sugs_filme.html">
+              {Array.from({ length: 9 }).map((_, index) => (
+                <a className={styles.ancoraMap} key={index} href="/paginas/VisuSugsFilm">
+                  <div className={styles.blocos}>
+                    <h1 className={styles.titulo}>Os Vingadores</h1>
+                    <div className={styles.bloco2}></div>
+                  </div>
+                </a>
+              ))}
+            </div>
+            <div className={styles.sugestoes}>
+              <h1>Sugestões de ator:</h1>
+            </div>
+            <div className={styles.card_blocos}>
+              {Array.from({ length: 9 }).map((_, index) => (
+                <a className={styles.ancoraMap} key={index} href="/paginas/VisuSugsAtor">
                   <div className={styles.blocos}>
                     <h1 className={styles.titulo}>Os Vingadores</h1>
                     <div className={styles.bloco2}></div>
@@ -38,7 +50,7 @@ const Sugestao = () => {
         </section>
 
         <section>
-        <LateralBar />
+          <LateralBar />
         </section>
       </main>
     </div>

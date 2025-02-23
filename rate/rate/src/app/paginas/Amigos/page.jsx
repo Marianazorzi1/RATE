@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./amigos.module.css"; // Importação correta do CSS Module
 import Header from "@/app/components/header/Header.jsx";
-import LateralBar from "@/app/components/LateralBar";
+import LateralBar from "@/app/components/lateralbar/LateralBar";
 
-const Comentarios = () => {
+const Amigos = () => {
   return (
     <div className={styles.body}>
       <Header />
@@ -12,20 +12,20 @@ const Comentarios = () => {
         <section className={styles.blocos_amgs}>
           <div className={styles.info_comen}>
             <div className={styles.comen_pes}>
-              <h1>Amigos: </h1>
+              <h1 className={styles.h1}>Amigos: </h1>
             </div>
             <div className={styles.card_blo}>
-              {[...Array(12)].map((_, index) => (
+              {[...Array(16)].map((_, index) => (
                 <div className={styles.bloco} key={index}>
                   <div className={styles.img_come}>
-                    <a href="perfil_comen.html">
-                      <img className={styles.perfi} src="img/Perfil.png" alt="Perfil" />
+                    <a href="/paginas/PerfilComen">
+                      <img className={styles.perfi} src="/img/Perfil.png" alt="Perfil" />
                     </a>
                   </div>
                   <div className={styles.blocos_in}>
                     <p className={styles.just}>@JustinBieber</p>
                     <div className={styles.div_button}>
-                      <a href="perfil_amg.html">
+                      <a href="/paginas/PerfilAmg">
                         <button className={styles.vizu_amg}>Visualizar perfil</button>
                       </a>
                       <button className={styles.rem_amg}>Remover amigo</button>
@@ -42,4 +42,4 @@ const Comentarios = () => {
   );
 };
 
-export default Comentarios;
+export default Amigos;

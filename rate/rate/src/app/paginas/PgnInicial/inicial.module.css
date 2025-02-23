@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@253&family=Nerko+One&family=Protest+Guerrilla&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-body {
+
+.body {
     background-color: #474747;
 }
 
@@ -155,9 +151,10 @@ body {
     height: 40px;
     width: 40px;
 }
-
-
-
+.h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
 
 .blocos_filmes {
     padding-top: 122px;
@@ -218,7 +215,7 @@ body {
 }
 
 
-.menu-btn {
+.menu_btn {
     display: none;
     position: fixed;
     top: 10px;
@@ -230,132 +227,4 @@ body {
     padding: 10px;
     z-index: 1000;
     cursor: pointer;
-}
-
-.menu-btn i {
-    font-size: 20px;
-}
-
-
-.menu-btn {
-    display: none;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #52057b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    z-index: 1000;
-    cursor: pointer;
-}
-
-.menu-btn i {
-    font-size: 20px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-    .rate {
-        font-size: 26px;
-    }.movie {
-        font-size: 10px;
-    }
-    #lupa {
-        font-size: 26px;
-    }
-    .botoes_perfil img {
-        height: 37px;
-        width: 37px;
-    }
-    .botoes {
-        width: 24px;
-        height: 24px;
-    }
-}
-
-
-@media only screen and (max-width: 767px) {
-    .rate{
-        font-size: 26px;
-    }
-    .movie {
-        font-size: 10px;
-    }
-    #lupa {
-        font-size: 22px;
-    }
-    .botoes_perfil img {
-        height: 34px;
-        width: 34px;
-    }
-    .botoes {
-        width: 24px;
-        height: 24px;
-    }
-}
-
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .rate {
-        font-size: 25px;
-    }
-    .movie {
-        font-size: 9px;
-    }
-    #lupa {
-        font-size: 22px;
-    }
-    .botoes_perfil img {
-        height: 31px;
-        width: 31px;
-    }
-    .botoes {
-        width: 18px;
-        height: 18px;
-    }
-}
-
-
-@media only screen and (max-width: 479px) {
-    .rate { 
-        font-size: 22px;
-    }
-    .movie {
-        font-size: 8px;
-    }
-    #lupa {
-        font-size: 20px;
-    }
-    .botoes_perfil img {
-        height: 29px;
-        width: 29px;
-    }
-    .botoes {
-        width: 25px;
-        height: 25px;
-    }
-}
-
-@media only screen and (max-width: 405px) {
-    .lateral_bar {
-        display: block;
-    }
-    .rate {
-        font-size: 22px;
-    }
-    .movie {
-        font-size: 8px;
-    }
-    #lupa {
-        font-size: 20px;
-    }
-    .botoes_perfil img {
-        height: 29px;
-        width: 29px;
-    }
-    .botoes {
-        width: 25px;
-        height: 25px;
-    }
 }
